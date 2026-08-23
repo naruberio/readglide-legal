@@ -6,7 +6,7 @@ permalink: /privacy
 
 # Privacy Policy
 
-**Last updated: August 9, 2026**
+**Last updated: August 23, 2026**
 
 Kohei Omori (a sole proprietor, hereinafter the "Operator", "we", "us", or "our") provides this Privacy Policy to explain how we handle your information in the iOS application "**Readglide**" (a teleprompter, the "App").
 
@@ -39,23 +39,19 @@ The current version (a pure text teleprompter) requires **no special permissions
 
 ## 4. Communication with third parties
 
-The App does not communicate over the network **except** for the following.
-
-| Recipient | Purpose | Information transmitted |
-|-----------|---------|------------------------|
-| Apple StoreKit / App Store servers | In-app purchase (one-time only) | Billing information managed automatically by Apple. We do not access this information. |
+The App **does not communicate over the network at all**.
 
 No third-party analytics services (Google Analytics, Firebase, etc.), advertising SDKs, or crash-reporting services are integrated into the App.
 
 ## 5. In-App Purchases
 
-The App offers a one-time "Readglide Pro" unlock through Apple's App Store In-App Purchase (IAP) feature. Billing and payment information are handled **directly by Apple**, and we cannot access payment details (credit-card numbers, etc.). There are **no subscriptions**.
+The App is a **paid app** and offers **no in-app purchases whatsoever**. There are no subscriptions either. The purchase completes at download time on the App Store; billing and payment information are handled **directly by Apple**, and we cannot access payment details (credit-card numbers, etc.).
 
 For more information, please refer to Apple's Privacy Policy (https://www.apple.com/legal/privacy/).
 
 ## 6. Children's use
 
-The App is rated 4+, but for in-app purchases by children under 13, we recommend parents use Apple ID parental controls (Family Sharing, Screen Time) to manage usage.
+The App is rated 4+. There are no in-app purchases, but for the purchase of the App itself by children under 13, we recommend parents use Apple ID parental controls (Family Sharing, Screen Time) to manage usage.
 
 ## 7. Your rights
 

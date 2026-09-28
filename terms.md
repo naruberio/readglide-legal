@@ -6,7 +6,7 @@ permalink: /terms
 
 # Terms of Service
 
-**Last updated: August 9, 2026**
+**Last updated: September 28, 2026**
 
 These Terms of Service ("Terms") govern your use of the iOS application "**Readglide**" ("App") provided by Kohei Omori ("Company", "we", "us", or "our"). By downloading or using the App, you ("User", "you") are deemed to have agreed to these Terms.
 
@@ -18,7 +18,7 @@ These Terms apply to all relationships between us and the User regarding the App
 
 ## 2. System requirements
 
-The App requires iOS 16.0 or later and runs on iPhone. Operation outside these environments is not guaranteed.
+The App requires iOS or iPadOS 16.0 or later and runs on iPhone and iPad. Operation outside these environments is not guaranteed.
 
 ## 3. License
 
@@ -32,18 +32,17 @@ We grant you a non-exclusive, non-transferable license to use the App on your iO
 
 ### 4.1 Pricing plans
 
-The App offers the following plans. Prices follow App Store Connect settings and are displayed in local currency. **No subscriptions or auto-renewing plans are offered**.
+The App is a **paid app** purchased once from the App Store. Prices follow App Store Connect settings and are displayed in local currency. **No subscriptions, auto-renewing plans, or in-app purchases are offered**.
 
 | Plan | Description | Price (US) |
 |------|-------------|-----------|
-| Free | Core reading & scrolling with no limits; save up to 3 scripts | $0 |
-| Readglide Pro (one-time) | All features unlocked: unlimited saved scripts, extended import, additional themes, line focus, external remote / foot-switch control (and future recording features) | $3.99 (tax included) — one-time |
+| App purchase (one-time) | Every feature: unlimited saved scripts, extended import, additional themes, line focus, external remote / foot-switch control, and recording | $1.99 (tax included) — one-time |
 
-The core experience — pasting a script and scrolling it — is never locked behind payment.
+A single purchase at download time unlocks the entire app. **There are no in-app purchases.**
 
 ### 4.2 Payment
 
-Payments are processed through your Apple ID's payment method. We do not handle payment information directly. Readglide Pro is a **single one-time purchase** with no auto-renewal.
+Payments are processed through your Apple ID's payment method. We do not handle payment information directly. The App is a **single one-time purchase** with no auto-renewal.
 
 ### 4.3 Refunds
 
@@ -51,7 +50,7 @@ Refund requests must be made through **Apple Support**. We follow Apple's decisi
 
 ### 4.4 Price changes
 
-We may change prices in the future. Changes apply only to new purchases and do not affect existing Readglide Pro users' rights.
+We may change prices in the future. Changes apply only to new purchases and do not affect the rights of users who have already purchased the App.
 
 ## 5. Intellectual Property
 
@@ -84,7 +83,7 @@ The App is provided "as is", and we do not warrant the **completeness, accuracy,
 
 ### 7.2 Limitation of liability
 
-In the event of damages caused by our fault, our liability is limited to the amount you have paid us in the 12 months preceding the damage. If you used the App for free, we shall have no liability. However, this limitation does not apply to damages caused by our willful misconduct or gross negligence.
+In the event of damages caused by our fault, our liability is limited to the amount you have paid us in the 12 months preceding the damage. However, this limitation does not apply to damages caused by our willful misconduct or gross negligence.
 
 ### 7.3 User responsibility
 

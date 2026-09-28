@@ -6,7 +6,7 @@ permalink: /support
 
 # Support / サポート
 
-Thank you for using **Readglide** — a one-time-purchase teleprompter for iPhone (no subscription, no ads).
+Thank you for using **Readglide** — a paid, one-time-purchase teleprompter for iPhone and iPad (no in-app purchases, no subscription, no ads).
 
 For support, questions, bug reports, or refund / feature requests, please contact us:
 
@@ -17,11 +17,11 @@ Response time: typically within 1 week.
 ## FAQ
 
 - **Refunds:** Purchases are processed by Apple. Please request refunds via [Apple Support](https://support.apple.com/HT204084).
-- **Restore purchase:** Open the App → **Settings → Restore Purchases**.
+- **Restore purchase:** Not needed — Readglide has no in-app purchases. Re-download it from the App Store with the same Apple ID and all features are available again. Scripts and settings are stored only on your device, so they are not restored if you deleted the App.
 
 ---
 
-**Readglide**（買い切りの iPhone 向けテレプロンプター。サブスクリプション・広告なし）をご利用いただきありがとうございます。
+**Readglide**（本体有料・買い切りの iPhone・iPad 向けテレプロンプター。アプリ内課金・サブスクリプション・広告なし）をご利用いただきありがとうございます。
 
 サポート・ご質問・不具合のご報告・返金／機能のご要望は、以下までご連絡ください。
 
@@ -32,7 +32,7 @@ Response time: typically within 1 week.
 ## よくあるご質問
 
 - **返金:** 課金は Apple が処理します。返金は [Apple のサポート](https://support.apple.com/HT204084) からお申し込みください。
-- **購入の復元:** アプリを開き、**「設定」→「購入を復元」** から復元できます。
+- **購入の復元:** アプリ内課金が無いため復元操作は不要です。同じ Apple ID で App Store から再ダウンロードすれば、そのまま全機能をお使いいただけます。原稿と設定は端末内にだけ保存されるため、アプリを削除していた場合は戻りません。
 
 ---
 

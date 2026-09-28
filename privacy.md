@@ -29,7 +29,7 @@ The App does not collect any personal information, as detailed below.
 | Usage history, operation logs | ✗ Not collected | No analytics |
 | Crash reports | ✗ Not collected | Not integrated (any future adoption will be separately disclosed) |
 
-We declare "No Data Collected" in the App Privacy Manifest (`PrivacyInfo.xcprivacy`) to Apple. The only Apple "Required Reason" APIs the App uses are user-defaults access (reason code CA92.1) to store your settings and file-timestamp access (reason code C617.1) to list and re-index your saved scripts. Both are strictly on-device and unrelated to tracking.
+We declare "No Data Collected" in the App Privacy Manifest (`PrivacyInfo.xcprivacy`) to Apple. The only Apple "Required Reason" APIs the App uses are user-defaults access (reason code CA92.1) to store your settings, disk-space access (reason code E174.1) to check free storage before recording, and file-timestamp access (reason code C617.1) to list and re-index your saved scripts. All three are strictly on-device and unrelated to tracking.
 
 ## 3. Permissions used on device
 
@@ -76,7 +76,6 @@ The following information stored on your device can be deleted by you at any tim
 - App settings (font size, line spacing, colors / themes, scroll speed, mirror mode, per-script target time, etc.)
 - Per-script practice history (the numbers from each score; deleted together with the script)
 - The name, agency or contact details, and per-script role entered for the slate (deleted when you turn on the slate and clear the fields on the review screen of a take that can be exported as a captioned video, though clearing the role deletes only the role for that take's script; the name and agency or contact details are also deleted when you remove the App, and the role when you delete the script)
-- The free-tier saved-script count
 
 ## 8. Changes to this Policy
 

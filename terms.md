@@ -6,7 +6,7 @@ permalink: /terms
 
 # Terms of Service
 
-**Last updated: August 23, 2026**
+**Last updated: September 28, 2026**
 
 These Terms of Service ("Terms") govern your use of the iOS application "**Readglide**" ("App") provided by Kohei Omori ("Company", "we", "us", or "our"). By downloading or using the App, you ("User", "you") are deemed to have agreed to these Terms.
 
@@ -18,7 +18,7 @@ These Terms apply to all relationships between us and the User regarding the App
 
 ## 2. System requirements
 
-The App requires iOS 16.0 or later and runs on iPhone. Operation outside these environments is not guaranteed.
+The App requires iOS or iPadOS 16.0 or later and runs on iPhone and iPad. Operation outside these environments is not guaranteed.
 
 ## 3. License
 
@@ -36,7 +36,7 @@ The App is a **paid app** purchased once from the App Store. Prices follow App S
 
 | Plan | Description | Price (US) |
 |------|-------------|-----------|
-| App purchase (one-time) | Every feature: unlimited saved scripts, extended import, additional themes, line focus, external remote / foot-switch control (and future recording features) | $1.99 (tax included) — one-time |
+| App purchase (one-time) | Every feature: unlimited saved scripts, extended import, additional themes, line focus, external remote / foot-switch control, and recording | $1.99 (tax included) — one-time |
 
 A single purchase at download time unlocks the entire app. **There are no in-app purchases.**
 
@@ -83,7 +83,7 @@ The App is provided "as is", and we do not warrant the **completeness, accuracy,
 
 ### 7.2 Limitation of liability
 
-In the event of damages caused by our fault, our liability is limited to the amount you have paid us in the 12 months preceding the damage. If you used the App for free, we shall have no liability. However, this limitation does not apply to damages caused by our willful misconduct or gross negligence.
+In the event of damages caused by our fault, our liability is limited to the amount you have paid us in the 12 months preceding the damage. However, this limitation does not apply to damages caused by our willful misconduct or gross negligence.
 
 ### 7.3 User responsibility
 

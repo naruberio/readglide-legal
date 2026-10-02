@@ -6,86 +6,81 @@ permalink: /privacy
 
 # Privacy Policy
 
-**Last updated: September 28, 2026**
+**Last updated: October 2, 2026**
 
-Kohei Omori (a sole proprietor, hereinafter the "Operator", "we", "us", or "our") provides this Privacy Policy to explain how we handle your information in the iOS application "**Readglide**" (a teleprompter, the "App").
+Readglide is a teleprompter for iPhone and iPad made by Kohei Omori, a sole proprietor based in Japan (called "the developer" below). Rather than listing categories of data, this page walks through the app in the order you use it (writing a script, reading and recording, reviewing a take, exporting) and says at each stage what Readglide keeps, where, and when it goes away. None of it reaches the developer: Readglide has no server, no account and no network code, and it collects no personal information.
 
 ---
 
-## 1. Core principle
+## Stage 1: writing a script
 
-The App works **entirely on your device**. The scripts you write or paste, and all display and scroll settings, are stored only on your device and are never transmitted to our servers or any third-party servers. We do **not collect personal information** through the App.
+The scripts you type, paste or import, and your display and scrolling preferences, are written to Readglide's own storage on your iPhone or iPad. They are not uploaded anywhere, neither to the developer nor to any other company.
 
-## 2. Information we collect
+Two of Apple's "required reason" APIs are used at this stage, both purely on the device: user defaults (reason CA92.1) hold your preferences, and file timestamps (reason C617.1) let the library list and re-index saved scripts.
 
-The App does not collect any personal information, as detailed below.
+## Stage 2: reading, recording and practicing aloud
 
-| Information category | Collected? | Reason |
-|---------------------|:---------:|--------|
-| Name, email, contact info | ✗ Not collected | No account features (a name or contact entered for a slate stays on your device; see §3) |
-| Your scripts / text | ✗ Not collected | Stored on-device only, no external transmission |
-| Location data | ✗ Not collected | Not required by functionality |
-| Device identifiers, advertising IDs | ✗ Not collected | No tracking |
-| Usage history, operation logs | ✗ Not collected | No analytics |
-| Crash reports | ✗ Not collected | Not integrated (any future adoption will be separately disclosed) |
+Scrolling a script needs no permission at all. Each optional feature below asks iOS for one permission, with an explanation, the first time you use it; saying no switches off only that feature. Readglide never asks for location, contacts or notifications.
 
-We declare "No Data Collected" in the App Privacy Manifest (`PrivacyInfo.xcprivacy`) to Apple. The only Apple "Required Reason" APIs the App uses are user-defaults access (reason code CA92.1) to store your settings, disk-space access (reason code E174.1) to check free storage before recording, and file-timestamp access (reason code C617.1) to list and re-index your saved scripts. All three are strictly on-device and unrelated to tracking.
+- **Camera** (`NSCameraUsageDescription`): filming while the script is on screen. The video is recorded on the device and goes nowhere else.
+- **Microphone** (`NSMicrophoneUsageDescription`): sound for a video, and practice with audio only. Sound is written only into that video or that practice recording and is not transmitted. Practice recordings are never added to your photo library.
+- **Add to Photos** (`NSPhotoLibraryAddUsageDescription`): saving takes and captioned videos. Readglide asks only to add; it cannot see what is already in your library.
 
-## 3. Permissions used on device
+Before a recording starts, Readglide checks the free storage (disk-space API, reason E174.1), again only on the device.
 
-Reading a script requires **no special permissions**. The optional features below ask for a permission, with an in-context explanation, the first time you use them. If you decline, everything else keeps working. The App never requests access to your location, contacts, or notifications.
+## Stage 3: reviewing a take
 
-| Permission | Feature | How it is handled |
-|-----------|---------|-------------------|
-| Camera (`NSCameraUsageDescription`) | Recording while the script is shown | Video is recorded on your device and never transmitted |
-| Microphone (`NSMicrophoneUsageDescription`) | Recording audio with the video; practicing with audio only | Audio is written only to the recording or the practice recording and never transmitted. Practice recordings are not saved to your photo library |
-| Add to Photos (`NSPhotoLibraryAddUsageDescription`) | Saving recordings and captioned videos | Add-only access; the App never reads your photo library |
-| Speech Recognition (`NSSpeechRecognitionUsageDescription`) | Scoring a video or audio take and script captions | The recording's audio is transcribed **on your device only** and matched to your script. If your device cannot recognize the language on-device, no recognition is performed; audio is never sent to our servers, Apple's servers, or any third party. Recognition results are discarded when you close the review screen and are not stored |
+**Speech Recognition** (`NSSpeechRecognitionUsageDescription`) is asked for the first time you open a take's review, which is where scoring and script captions are made. Readglide turns the take's audio into text **on the device only** and lines it up with your script. If the device has no on-device recognizer for the script's language, Readglide does not recognize the take at all; audio is never sent to the developer, to Apple's servers or to any third party. The recognized words are thrown away when the review screen closes; they are not saved.
 
-For scoring and captions, a copy of your most recent take is kept in the App's on-device cache. It is deleted when you close the recording screen, start the next take, when a recording is interrupted, or the next time you launch the App. While the review screen is open, it keeps one more copy for itself, which is deleted when you close the review screen (or the next time you launch the App).
+To make scoring and captions possible, Readglide holds working copies in its on-device cache:
 
-When you practice with audio only (recording with the microphone, without the camera), the recording is not saved to your photo library; only the most recent one is kept in the App's on-device cache. It is deleted when you close the review screen, start the next recording, close the practice panel, close the recording screen, or the next time you launch the App. While the review screen is open, it keeps one more copy for itself, as with videos, which is deleted when you close the review screen (or the next time you launch the App).
+- **Your latest video take**: one copy, removed when you close the recording screen, start the next take, a recording is interrupted, or Readglide is next launched.
+- **Your latest audio-only practice recording**: one copy (it never goes to Photos), removed when you close the review screen, start the next recording, close the practice panel, close the recording screen, or Readglide is next launched.
+- **While the review screen is open**: one further copy of the take under review, video or audio, removed when that screen closes (or at the next launch).
 
-**Only the numbers** from each score (when it was scored, the read-as-written rate, lines read and the script's line count, skipped lines, speaking rate, number of long pauses, spoken time, and target time) are kept on your device as a per-script practice history, used to show how your score changes. Each take also gets a code that is not linked to any other information (the code itself cannot be traced to the video in your photo library), only so the same take is not counted twice. The history never includes your script's text, the recognized words, audio, or video, and it is never transmitted. Up to the latest 100 takes are kept per script, and they are deleted together with the script. The history of a script you did not save (one you only pasted and read) is deleted the next time you launch the App.
+What stays after a review is **numbers only**, saved per script as a practice history so you can follow your progress: when the take was scored, the read-as-written rate, lines read and the script's line count, skipped lines, speaking rate, how many long pauses there were, spoken time, and target time. Each take is tagged with a code that connects to nothing else (it cannot be used to find the video in your photo library); it exists only so one take is not counted twice. The history never holds the script's text, the recognized words, audio or video, and it never leaves the device. Each script keeps its latest 100 takes, and deleting the script deletes its history. A script you only pasted and read without saving loses its history at the next launch.
 
-If you use a slate (a card with your name, role, and agency or contact details at the start of a captioned video), the name and agency or contact details you enter, and the role you enter for each script, are stored only on your device (in the App's settings). They only appear as text in the videos you export with the slate and are never sent to us or any third party. Whether to share those videos is up to you. The role for a script is deleted together with the script, and the role for a script you did not save (one you only pasted and read) is deleted the next time you launch the App.
+## Stage 4: exporting and sharing
 
-## 4. Communication with third parties
+A captioned video is added to Photos (add-only, as above). Once a video or subtitle file is out of Readglide, where it goes next is your decision.
 
-The App **does not communicate over the network at all**.
+If you put a slate at the start of a captioned video (a card showing your name, the role, and your agency or contact details), what you type is kept only on the device, in Readglide's settings: the name and agency or contact details once, and the role per script. It appears only as text inside the videos you export with that slate and is never sent to the developer or anyone else. A script's role is deleted with the script, and the role of a script you did not save (one you only pasted and read) is deleted at the next launch.
 
-No third-party analytics services (Google Analytics, Firebase, etc.), advertising SDKs, or crash-reporting services are integrated into the App.
+## What Readglide never does
 
-## 5. In-App Purchases
+- It never connects to a network. No analytics service (Google Analytics, Firebase or similar), advertising SDK or crash-reporting service is built in.
+- It has no account to sign in to. The only name it ever stores is one you choose to type on a slate (Stage 4), and that stays on the device.
+- It never reads device identifiers or advertising IDs, never tracks you, keeps no usage logs and has no use for your location.
+- It sends no crash reports. If crash reporting is ever added, that will be disclosed separately.
 
-The App is a **paid app** and offers **no in-app purchases whatsoever**. There are no subscriptions either. The purchase completes at download time on the App Store; billing and payment information are handled **directly by Apple**, and we cannot access payment details (credit-card numbers, etc.).
+Readglide's privacy manifest (`PrivacyInfo.xcprivacy`) tells Apple "No Data Collected". The three required-reason APIs named above are the only ones it uses, and none of them serves tracking.
 
-For more information, please refer to Apple's Privacy Policy (https://www.apple.com/legal/privacy/).
+## Buying Readglide
 
-## 6. Children's use
+Readglide is a paid app bought once on the App Store; there are no in-app purchases and no subscription. Apple completes the purchase at download and handles all billing; the developer never sees card numbers or any other payment details. Apple's own policy covers that part: https://www.apple.com/legal/privacy/
 
-The App is rated 4+. There are no in-app purchases, but for the purchase of the App itself by children under 13, we recommend parents use Apple ID parental controls (Family Sharing, Screen Time) to manage usage.
+## Younger users
 
-## 7. Your rights
+Readglide is rated 4+. Nothing is sold inside the app; when a child under 13 buys the app itself, Apple's parental tools (Family Sharing and Screen Time) are the recommended way for a parent to stay in control.
 
-Since the App does not collect your information, we do not hold any data subject to disclosure or deletion requests.
+## Removing what Readglide stored
 
-The following information stored on your device can be deleted by you at any time — by deleting individual scripts, using the App's "Settings" screen, or removing the App:
+The developer holds none of your information, so there is nothing to disclose or erase on request. Everything Readglide stored is on your device, and you can remove it whenever you like by deleting a script, using Readglide's Settings screen, or deleting the app:
 
-- Scripts you have written or pasted
-- App settings (font size, line spacing, colors / themes, scroll speed, mirror mode, per-script target time, etc.)
-- Per-script practice history (the numbers from each score; deleted together with the script)
-- The name, agency or contact details, and per-script role entered for the slate (deleted when you turn on the slate and clear the fields on the review screen of a take that can be exported as a captioned video, though clearing the role deletes only the role for that take's script; the name and agency or contact details are also deleted when you remove the App, and the role when you delete the script)
+- scripts you wrote, pasted or imported
+- preferences (text size, line spacing, colors and themes, scroll speed, mirroring, each script's target time, and so on)
+- each script's practice history (removed with the script)
+- the slate's name, agency or contact details, and per-script roles. With the slate switched on, clearing its fields on the review screen of a take that can be exported as a captioned video deletes them; clearing the role there deletes only the role of that take's script. The name and agency or contact details also go when the app is deleted, and a role goes when its script is deleted.
 
-## 8. Changes to this Policy
+## Updates to this page
 
-This Policy may be revised due to legal changes or feature updates to the App. Significant changes will be notified within the App or on this page.
+This page may change when the law changes or Readglide gains features. Important changes will be announced in the app or here.
 
-## 9. Contact
+## Contact
 
-For inquiries regarding this Policy or how the App is operated, please contact:
+Questions about this policy or about how Readglide is run:
 
-- **Entity**: Kohei Omori
+- **Developer**: Kohei Omori
 - **Email**: [konpei.work@gmail.com](mailto:konpei.work@gmail.com)
 
 ---

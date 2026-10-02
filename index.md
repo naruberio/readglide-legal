@@ -5,9 +5,9 @@ title: Readglide Legal
 
 # Readglide — pages for users / 利用者向けのページ
 
-Readglide is an iPhone and iPad teleprompter with no server behind it: scripts, scores and settings stay on your device. The pages below explain what it stores and the terms it is sold under.
+Readglide is an iPhone and iPad teleprompter with no server behind it: scripts, scores and settings are kept on your device. The pages below explain what it stores and the terms it is sold under.
 
-Readglide は、裏にサーバーを持たない iPhone・iPad 用のテレプロンプターです。原稿・採点・設定は端末の中にとどまります。何を保存するか、どんな条件で販売しているかを、次のページにまとめています。
+Readglide は、裏にサーバーを持たない iPhone・iPad 用のテレプロンプターです。原稿・採点・設定は、サーバーではなく端末の中に保存します。何を保存するか、どんな条件で販売しているかを、次のページにまとめています。
 
 | | English | 日本語 |
 |---|---|---|

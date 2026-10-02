@@ -28,11 +28,13 @@ Scrolling a script needs no permission at all. The optional features below ask i
 - **Microphone** (`NSMicrophoneUsageDescription`): sound for a video, and practice with audio only. Sound is written only into that video or that practice recording and is not transmitted. Practice recordings are never added to your photo library.
 - **Add to Photos** (`NSPhotoLibraryAddUsageDescription`): saving takes and captioned videos. Readglide asks only to add; it cannot see what is already in your library.
 
+While you film, the video is written to the iOS temporary folder and removed once it has been added to Photos. If adding to Photos is not allowed, the file is kept so the take is not lost, and it goes when iOS clears its temporary folder.
+
 Before a recording starts, Readglide checks the free storage (disk-space API, reason E174.1), again only on the device.
 
 ## Stage 3: reviewing a take
 
-**Speech Recognition** (`NSSpeechRecognitionUsageDescription`) is requested the first time you open a take's review, and only if the script's language can be recognized on the device. That screen is where scoring and script captions are made. Readglide turns the take's audio into text **on the device only** and lines it up with your script. If the device has no on-device recognizer for the script's language, Readglide does not recognize the take at all; audio is never sent to the developer, to Apple's servers or to any third party. The recognized words are thrown away when the review screen closes; they are not saved.
+**Speech Recognition** (`NSSpeechRecognitionUsageDescription`) is requested the first time you open the review of a take whose script's language the device can recognize. That screen is where scoring and script captions are made. Readglide turns the take's audio into text **on the device only** and lines it up with your script. If the device has no on-device recognizer for the script's language, Readglide does not recognize the take at all; audio is never sent to the developer, to Apple's servers or to any third party. The recognized words are thrown away when the review screen closes; they are not saved.
 
 To make scoring and captions possible, Readglide holds working files in its on-device cache:
 
@@ -74,14 +76,14 @@ Readglide is rated 4+. Nothing is sold inside the app; when a child under 13 buy
 
 ## Removing what Readglide stored
 
-The developer holds none of your information, so there is nothing to disclose or erase on request. Everything Readglide stored is on your device, and you can remove it whenever you like by deleting a script, using Readglide's Settings screen, or deleting the app:
+The developer holds none of your information, so there is nothing to disclose or erase on request. Everything Readglide stored is on your device (for device backups, see the end of this section), and you can remove it whenever you like by deleting a script, using Readglide's Settings screen, or deleting the app:
 
 - scripts you wrote, pasted or imported
 - preferences (text size, line spacing, colors and themes, scroll speed, mirroring, each script's target time, and so on)
 - each script's practice history (removed with the script)
 - the slate's name, agency or contact details, and per-script roles. With the slate switched on, clearing its fields on the review screen of a take that can be exported as a captioned video deletes them; clearing the role there deletes only the role of that take's script. The name and agency or contact details also go when the app is deleted, and a role goes when its script is deleted.
 
-Whatever went into a device backup stays in that backup. To remove it there, delete the backup in iCloud or on the computer.
+Whatever went into a device backup stays in that backup. For iCloud Backup, switching Readglide off in the list of apps to back up, in iOS Settings, and confirming the deletion removes just Readglide's part. A backup on a computer cannot have Readglide's part removed on its own; clearing it there means deleting that whole backup, other apps' data included.
 
 ## Updates to this page
 

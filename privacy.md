@@ -28,7 +28,7 @@ Scrolling a script needs no permission at all. The optional features below ask i
 - **Microphone** (`NSMicrophoneUsageDescription`): sound for a video, and practice with audio only. Sound is written only into that video or that practice recording and is not transmitted. Practice recordings are never added to your photo library.
 - **Add to Photos** (`NSPhotoLibraryAddUsageDescription`): saving takes and captioned videos. Readglide asks only to add; it cannot see what is already in your library.
 
-While you film, the video is written to the iOS temporary folder and removed once it has been added to Photos. If adding to Photos is not allowed, the file is kept so the take is not lost, and it goes when iOS clears its temporary folder.
+While you film, the video is written to the iOS temporary folder and removed once it has been added to Photos. If adding to Photos is not allowed, the file is left in place and goes when iOS clears its temporary folder.
 
 Before a recording starts, Readglide checks the free storage (disk-space API, reason E174.1), again only on the device.
 

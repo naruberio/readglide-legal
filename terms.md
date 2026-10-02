@@ -6,104 +6,70 @@ permalink: /terms
 
 # Terms of Service
 
-**Last updated: September 28, 2026**
+**Last updated: October 2, 2026**
 
-These Terms of Service ("Terms") govern your use of the iOS application "**Readglide**" ("App") provided by Kohei Omori ("Company", "we", "us", or "our"). By downloading or using the App, you ("User", "you") are deemed to have agreed to these Terms.
+Readglide, a teleprompter for iPhone and iPad, is made and sold by Kohei Omori, a one-person business in Japan ("the developer" on this page). What follows is the arrangement between the developer and anyone who gets or uses Readglide. By getting Readglide or starting to use it, you agree to it.
 
 ---
 
-## 1. Scope
+## How these terms sit beside Apple's
 
-These Terms apply to all relationships between us and the User regarding the App. The App is distributed through Apple Inc.'s App Store, and Apple's "**Licensed Application End User License Agreement**" ("Apple Standard EULA", https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) also applies. In case of conflict between these Terms and the Apple Standard EULA, the Apple Standard EULA prevails.
+Readglide is distributed through the App Store, which Apple runs, so Apple's Licensed Application End User License Agreement, or "Apple EULA" (https://www.apple.com/legal/internet-services/itunes/dev/stdeula/), applies at the same time. These terms apply to every dealing between the developer and you concerning Readglide. At any point where the two contradict each other, the Apple EULA takes precedence.
 
-## 2. System requirements
+## What you may do with Readglide
 
-The App requires iOS or iPadOS 16.0 or later and runs on iPhone and iPad. Operation outside these environments is not guaranteed.
+Readglide needs an iPhone or iPad on iOS or iPadOS 16.0 or later. On earlier versions, or on other hardware, nothing is guaranteed.
 
-## 3. License
+You may use Readglide on your iOS devices, for personal use and not to earn money. The developer can give the same permission to others too (it is non-exclusive), and you cannot transfer yours to anybody. On top of that, three things are forbidden:
 
-We grant you a non-exclusive, non-transferable license to use the App on your iOS device for personal, non-commercial purposes. You may not:
+- analysing what is inside (reverse engineering, such as decompiling or disassembling);
+- altering it, making copies, passing it on, lending, leasing or selling it;
+- letting someone else use it under your permission (sublicensing).
 
-- Reverse engineer, decompile, or disassemble the App
-- Modify, copy, redistribute, lend, lease, or sell the App
-- Sublicense the App to any third party
+Some uses are ruled out as well:
 
-## 4. Purchases (One-Time)
+- breaking the law with it, or infringing anybody's rights;
+- getting in the way of how Readglide is meant to work;
+- using someone's copyrighted work with Readglide without their permission;
+- any other use the developer finds inappropriate.
 
-### 4.1 Pricing plans
+## Paying for Readglide
 
-The App is a **paid app** purchased once from the App Store. Prices follow App Store Connect settings and are displayed in local currency. **No subscriptions, auto-renewing plans, or in-app purchases are offered**.
+The price is paid once, when you download. That unlocks every feature, and nothing is left to buy afterwards: nothing is sold inside the app, there is no subscription, and no plan renews itself.
 
-| Plan | Description | Price (US) |
-|------|-------------|-----------|
-| App purchase (one-time) | Every feature: unlimited saved scripts, extended import, additional themes, line focus, external remote / foot-switch control, and recording | $1.99 (tax included) — one-time |
+The developer sets the price in App Store Connect; the App Store displays it converted into your currency. In Japan Readglide costs ¥300, consumption tax included. US buyers pay US $1.99, plus sales tax added at checkout where it applies. Everywhere else, the figure is Apple's conversion.
 
-A single purchase at download time unlocks the entire app. **There are no in-app purchases.**
+Payment is taken by Apple, from whatever method your Apple ID uses, and card numbers and similar details never reach the developer. To ask for your money back, contact Apple Support (https://support.apple.com/HT204084); Apple decides on refunds, and the developer follows that decision. A future price change would apply to purchases from then on. Copies already bought are left untouched.
 
-### 4.2 Payment
+## Who owns what
 
-Payments are processed through your Apple ID's payment method. We do not handle payment information directly. The App is a **single one-time purchase** with no auto-renewal.
+The copyrights, trademarks and other rights in the app itself and in its code, design, text, name and other content are owned by the developer or by whoever allowed the developer to use them.
 
-### 4.3 Refunds
+The scripts you write in Readglide, or bring into it, remain your property. Readglide never sends them off your device, so there is no way for the developer to read them.
 
-Refund requests must be made through **Apple Support**. We follow Apple's decisions. Apple's refund policy is available at https://support.apple.com/HT204084.
+The Readglide build now on the App Store includes no open-source code written by third parties. Should any be added, each license notice will be made viewable inside the app.
 
-### 4.4 Price changes
+## Limits on the developer's promises
 
-We may change prices in the future. Changes apply only to new purchases and do not affect the rights of users who have already purchased the App.
+Readglide is supplied "as is". No guarantee is given that it is free of gaps or errors, or that it suits any purpose you have in mind.
 
-## 5. Intellectual Property
+Readglide puts a script on screen and scrolls it; deciding what to say is up to you. You are responsible for the content of what you display and for how you use it, whether in a talk, a recording or a broadcast.
 
-### 5.1 Our IP
+Should the developer be at fault and cause you harm, the most the developer will pay is what you paid for Readglide during the 12 months before it happened. No such ceiling exists when the developer acted on purpose or with gross negligence.
 
-Copyrights, trademarks, and other intellectual property rights in the App and its content belong to us or our licensors.
+## When things change
 
-### 5.2 Your content
+Features can change, appear or disappear without notice. If Readglide is to be withdrawn, users will be told on this page or inside Readglide, before it happens wherever that is possible.
 
-Rights to the scripts you create or use with the App belong to you. Since the App does not transmit your scripts outside your device, we cannot access your content.
+The developer may rewrite these terms when needed. A rewritten version applies from the moment it is posted on this page or inside Readglide.
 
-### 5.3 Open Source Software
+## Law and court
 
-The App may include open source software. License details, if any, are available in the "Open Source Licenses" section within the App's "Settings" screen.
+The laws of Japan govern these terms. If a dispute over Readglide reaches court, it is heard first by the Tokyo District Court and no other (exclusive jurisdiction at first instance).
 
-## 6. Prohibited Activities
+## Contact
 
-You may not engage in the following while using the App:
-
-- Use the App for illegal activities or to infringe upon others' rights
-- Interfere with the App's operation
-- Use third parties' copyrighted content without the rights holder's permission
-- Any other activities we deem inappropriate
-
-## 7. Disclaimers
-
-### 7.1 Service warranty
-
-The App is provided "as is", and we do not warrant the **completeness, accuracy, or fitness for a particular purpose** of the App.
-
-### 7.2 Limitation of liability
-
-In the event of damages caused by our fault, our liability is limited to the amount you have paid us in the 12 months preceding the damage. However, this limitation does not apply to damages caused by our willful misconduct or gross negligence.
-
-### 7.3 User responsibility
-
-The App is an aid for displaying and scrolling text. You are responsible for the content you display (your scripts) and for how you use it (e.g., during presentations, recordings, or broadcasts).
-
-## 8. Service changes and termination
-
-We may change, add, or remove App features without prior notice. If we terminate the App, we will notify users via the App or this page to the extent possible.
-
-## 9. Changes to these Terms
-
-We may modify these Terms as necessary. The revised Terms take effect when posted within the App or on this page.
-
-## 10. Governing law and jurisdiction
-
-These Terms are governed by **the laws of Japan**. Any disputes regarding the App shall be subject to the exclusive jurisdiction of the **Tokyo District Court** as the court of first instance.
-
-## 11. Contact
-
-For inquiries about these Terms, please contact [konpei.work@gmail.com](mailto:konpei.work@gmail.com).
+Questions about this page: [konpei.work@gmail.com](mailto:konpei.work@gmail.com)
 
 ---
 

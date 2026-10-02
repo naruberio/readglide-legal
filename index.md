@@ -3,33 +3,22 @@ layout: default
 title: Readglide Legal
 ---
 
-# Readglide 法務文書
+# Readglide — pages for users / 利用者向けのページ
 
-iOS アプリ「**Readglide**」（テレプロンプター）のプライバシーポリシー・利用規約をご確認いただけます。
+Readglide is an iPhone and iPad teleprompter with no server behind it: scripts, scores and settings are kept on your device. The pages below explain what it stores and the terms it is sold under.
 
-## ドキュメント
+Readglide は、裏にサーバーを持たない iPhone・iPad 用のテレプロンプターです。原稿・採点・設定は、サーバーではなく端末の中に保存します。何を保存するか、どんな条件で販売しているかを、次のページにまとめています。
 
-### プライバシーポリシー / Privacy Policy
+| | English | 日本語 |
+|---|---|---|
+| What Readglide stores, and where / 何をどこに残すか | [Privacy Policy](./privacy) | [プライバシーポリシー](./privacy-ja) |
+| Terms of sale and use / 販売と利用の条件 | [Terms of Service](./terms) | [利用規約](./terms-ja) |
+| Help and contact / 困ったとき | [Support](./support) | [サポート](./support) |
 
-- [日本語版](./privacy-ja)
-- [English](./privacy)
+## Get Readglide / 入手
 
-### 利用規約 / Terms of Service
+[Readglide on the App Store / App Store の Readglide](https://apps.apple.com/app/id6799660946)
 
-- [日本語版](./terms-ja)
-- [English](./terms)
+## Developer / 開発者
 
-## Support / お問い合わせ
-
-For support, questions, or bug reports, please contact:
-
-[konpei.work+readglide@gmail.com](mailto:konpei.work+readglide@gmail.com)
-
-サポート・お問い合わせは上記メールアドレスまでご連絡ください。返信は通常 1 週間以内に行います。
-
-Response time: typically within 1 week.
-
-## 関連リンク
-
-- App Store ページ: （v1.0 公開後に追加）
-- 開発者: 大森 康平
+Kohei Omori / 大森 康平 — [konpei.work+readglide@gmail.com](mailto:konpei.work+readglide@gmail.com)

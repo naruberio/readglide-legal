@@ -6,7 +6,7 @@ permalink: /privacy
 
 # Privacy Policy
 
-**Last updated: October 13, 2026**
+**Last updated: October 22, 2026**
 
 Readglide is a teleprompter for iPhone and iPad made by Kohei Omori, a sole proprietor based in Japan (called "the developer" below). This page walks through the app in the order you use it (writing a script, reading and recording, reviewing a take, exporting) and says at each stage what Readglide keeps, where, and when it goes away. None of it reaches the developer: Readglide has no server, no account and no network code, and it collects no personal information.
 
@@ -16,7 +16,7 @@ Readglide is a teleprompter for iPhone and iPad made by Kohei Omori, a sole prop
 
 The scripts you type, paste or import, and your display and scrolling preferences, are written to Readglide's own storage on your iPhone or iPad. Readglide never uploads them, neither to the developer nor to any other company.
 
-If you back up your device (to iCloud or to a computer), Readglide's scripts, practice history and settings, slate entries included, go into that backup like any other app's data (section takes do not; see Stage 2). The backup lives in the iCloud account or on the computer you chose; the developer never receives it.
+If you back up your device (to iCloud or to a computer), Readglide's scripts, practice history, Read-Aloud Log and settings, slate entries included, go into that backup like any other app's data (section takes do not; see Stage 2). The backup lives in the iCloud account or on the computer you chose; the developer never receives it.
 
 Two of Apple's "required reason" APIs are used at this stage, both purely on the device: user defaults (reason CA92.1) hold your preferences, and file timestamps (reason C617.1) let the library list and re-index saved scripts.
 
@@ -26,7 +26,7 @@ Scrolling a script needs no permission at all. The optional features below ask i
 
 - **Camera** (`NSCameraUsageDescription`): filming while the script is on screen. The video is recorded on the device, and Readglide sends it nowhere.
 - **Microphone** (`NSMicrophoneUsageDescription`): sound for a video, and practice with audio only. Sound is written only into that video or that practice recording and is not transmitted. Practice recordings are never added to your photo library.
-- **Add to Photos** (`NSPhotoLibraryAddUsageDescription`): saving takes, captioned videos and videos joined from section takes. Readglide asks only to add; it cannot see what is already in your library.
+- **Add to Photos** (`NSPhotoLibraryAddUsageDescription`): saving takes, captioned videos, videos joined from section takes and videos with retakes cut out. Readglide asks only to add; it cannot see what is already in your library.
 
 Timer & Bell, which you use without a script, needs no permission. Readglide makes the bell sound itself and plays it; it does not use the microphone and records nothing. Its duration and bell settings are kept with your other preferences in Readglide's settings on the device.
 
@@ -48,20 +48,23 @@ To make scoring and captions possible, Readglide holds working files in its on-d
 - **Your latest audio-only practice recording**: the recording itself (it never goes to Photos), removed when you close the review screen, start the next recording, close the practice panel, close the recording screen, or Readglide is next launched.
 - **While the review screen is open**: one further copy of the take under review, video or audio, removed when that screen closes (or at the next launch).
 
-What stays after a review is **numbers only**, saved per script as a practice history so you can follow your progress: when the take was scored, the read-as-written rate, lines read and the script's line count, skipped lines, speaking rate, how many long pauses there were, spoken time, and target time. Each take is tagged with a code that connects to nothing else (it cannot be used to find the video in your photo library); it exists only so one take is not counted twice. The history never holds the script's text, the recognized words, audio or video, and Readglide never sends it off the device. Each script keeps its latest 100 takes, and deleting the script deletes its history. A script you only pasted and read without saving, and the sample script opened from Interview practice in the script list (it is never saved), lose their history at the next launch.
+Except when you add a reading to the Read-Aloud Log (next paragraph), what stays after a review is **numbers only**, saved per script as a practice history so you can follow your progress: when the take was scored, the read-as-written rate, lines read and the script's line count, skipped lines, speaking rate, how many long pauses there were, spoken time, and target time. Each take is tagged with a code that connects to nothing else (it cannot be used to find the video in your photo library); it exists only so one take is not counted twice. The history never holds the script's text, the recognized words, audio or video, and Readglide never sends it off the device. Each script keeps its latest 100 takes, and deleting the script deletes its history. A script you only pasted and read without saving, and the sample script opened from Interview practice in the script list (it is never saved), lose their history at the next launch.
+
+For a take read aloud from Read-Aloud Log in the script list, Readglide adds one entry to the log only when you tap "Add to log" on the review screen (nothing is kept if you don't). The entry holds when you read, the script's title (up to 80 characters), the reading time, the read-as-written rate, lines read and the script's line count, how many spots to practice there were together with **the script's text** for the first 20 of them (the spot itself and a few characters on each side), whether a grown-up listened, and the same take code as the practice history (used only so one take is not logged twice). The script's text is kept so you can look back at where the reading went wrong and hand the log to a teacher. Audio, video and the recognized words are never in it, and spots to practice can include recognition errors. The log is kept in Readglide's own storage on the device, separately from your scripts: deleting a script does not delete it (it is a record of homework done), and it keeps the latest 2,000 readings. Readglide never sends the log off the device.
 
 When you open the Section Takes list, any section take not yet scored is scored the same way, on the device only, and the recognized words are not kept. What stays is a few numbers added to that take's catalog entry from Stage 2 (the read-as-written rate, lines read and the section's line count, skipped lines, or a mark if the take could not be scored), the section's code at the time of scoring, and where to trim the start and end when joining (in seconds). These scores do not go into the practice history.
 
 ## Stage 4: exporting and sharing
 
-A captioned video, or a video joined from section takes, is added to Photos (add-only, as above). Once a video or subtitle file is out of Readglide, where it goes next is your decision.
+A captioned video, a video joined from section takes or a video with retakes cut out is added to Photos (add-only, as above). A subtitle file, or a month's image from the Read-Aloud Log, goes wherever you pick in the share sheet. Once a video, subtitle file or image is out of Readglide, where it goes next is your decision.
 
 Exporting also puts files in the iOS temporary folder:
 
 - **A captioned video while it is being made**: one file, removed as soon as it has been added to Photos (or as soon as the export fails or is cancelled).
 - **The subtitle file (.srt)**: one file, made when scoring finishes so it is ready to share, and removed when the review screen closes.
-- **A video being joined from section takes**: one file, removed as soon as it has been added to Photos (or as soon as joining fails or is cancelled, or adding it to Photos is not allowed or fails).
-- **Silent audio files**: made to fill the parts of a take where its sound is shorter than its video, and removed once joining finishes, fails or is cancelled.
+- **A video being joined from section takes, or one being made with retakes cut out**: one file each, removed as soon as it has been added to Photos (or as soon as joining or cutting fails or is cancelled, or adding it to Photos is not allowed or fails).
+- **Silent audio files**: made to fill the parts of a take where its sound is shorter than its video, and removed once joining or cutting finishes, fails or is cancelled.
+- **A month's image from the Read-Aloud Log (PNG)**: one file, made on the Read-Aloud Log screen when the month shown has entries, so it is ready for "Share this month". It shows each entry's date, script title, reading time, the number of spots to practice with the script's text for the first 3 of them, and whether a grown-up listened, plus the month's count and total time. It is removed when it is remade for another month or changed entries, and when the Read-Aloud Log screen closes.
 
 If Readglide quits partway and leaves any of these behind, it goes when iOS clears its temporary folder.
 
@@ -88,14 +91,17 @@ When you close the review screen of a take that beat your personal best, Readgli
 
 Readglide is rated 4+. Nothing is sold inside the app; when a child under 13 buys the app itself, Apple's parental tools (Family Sharing and Screen Time) are the recommended way for a parent to stay in control.
 
+Read-Aloud Log in the script list is for a parent who listens to a child reading aloud and keeps a record of it (what it keeps is in Stage 3). The recording is handled on the device only, as with practice with audio only, and the log never reaches the developer either.
+
 ## Removing what Readglide stored
 
-The developer holds none of your information, so there is nothing to disclose or erase on request. Everything Readglide stored is on your device (for device backups, see the end of this section), and you can remove it whenever you like by deleting a script, using Readglide's Settings screen or the Section Takes list, or deleting the app:
+The developer holds none of your information, so there is nothing to disclose or erase on request. Everything Readglide stored is on your device (for device backups, see the end of this section), and you can remove it whenever you like by deleting a script, using Readglide's Settings screen, the Section Takes list or the Read-Aloud Log screen, or deleting the app:
 
 - scripts you wrote, pasted or imported
 - preferences (text size, line spacing, colors and themes, scroll speed, mirroring, each script's target time, the Timer & Bell duration and bell settings, and so on)
 - the app version number at which Readglide asked for a rating (removed when the app is deleted)
 - each script's practice history (removed with the script)
+- the Read-Aloud Log. On the Read-Aloud Log screen you can delete one reading at a time (tap it and choose Delete, or swipe it left). It is not removed when a script is deleted; it goes when the app is deleted. If the log's file ever becomes unreadable (for example, because it is damaged), Readglide keeps that file on the device under another name instead of overwriting it, and starts a new log; that file also goes when the app is deleted.
 - the slate's name, agency or contact details, and per-script roles. With the slate switched on, clearing its fields on the review screen of a take that can be exported as a captioned video deletes them; clearing the role there deletes only the role of that take's script. The name and agency or contact details also go when the app is deleted, and a role goes when its script is deleted.
 - copies of section takes and their catalog entries. In the Section Takes list you can delete one take, a section's takes, the takes you did not pick after joining, or all of a script's takes. They also go when the script or the app is deleted. Copies added to Photos stay there; delete them in the Photos app.
 

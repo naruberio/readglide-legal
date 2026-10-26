@@ -11,6 +11,7 @@ iOS アプリ「Readglide」（テレプロンプター）のプライバシー�
 
 - `sitemap.xml` は jekyll-sitemap が作る。`robots.txt` がその在りかを示し、Search Console（ドメインのプロパティ `naruberio.com`）と
   Bing Webmaster Tools に登録する
+- `<32 桁の 16 進>.txt` は IndexNow の鍵（公開して使うもの）。ページを変えて公開したら、`keyLocation` をこのファイルにして IndexNow に通知する
 
 公開 URL:
 

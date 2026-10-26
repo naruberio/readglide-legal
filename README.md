@@ -6,11 +6,17 @@ iOS アプリ「Readglide」（テレプロンプター）のプライバシー�
 
 ## 公開 URL
 
-GitHub Pages 有効化後、以下の URL で公開されます:
+独自ドメイン `readglide.naruberio.com` で公開している（KAN-1085。`CNAME`・`_config.yml` の `url`。DNS は naruberio-site の NaruberioAppPages）。
+旧 URL（`https://naruberio.github.io/readglide-legal/…`）は GitHub が同じパスへ 301 で転送するので（https への転送は Pages の「Enforce HTTPS」が有効なときだけ。切り替え後に `https_enforced` を確かめる）、アプリと App Store Connect の URL は変えていない。
 
-- プライバシーポリシー: https://naruberio.github.io/readglide-legal/privacy
-- 利用規約: https://naruberio.github.io/readglide-legal/terms
-- サポート: https://naruberio.github.io/readglide-legal/support
+- `sitemap.xml` は jekyll-sitemap が作る。`robots.txt` がその在りかを示し、Search Console（ドメインのプロパティ `naruberio.com`）と
+  Bing Webmaster Tools に登録する
+
+公開 URL:
+
+- プライバシーポリシー: https://readglide.naruberio.com/privacy
+- 利用規約: https://readglide.naruberio.com/terms
+- サポート: https://readglide.naruberio.com/support
 
 ## 言語
 

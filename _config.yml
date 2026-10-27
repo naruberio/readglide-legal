@@ -3,3 +3,12 @@ title: Readglide Legal
 description: Readglide（テレプロンプター）のプライバシーポリシー・利用規約
 theme: jekyll-theme-minimal
 lang: ja
+
+# 独自ドメイン（KAN-1085。DNS は naruberio-site の NaruberioAppPages）。CNAME と同じホストを書く。
+# 書かないと canonical と sitemap の URL がビルドの時点の Pages の設定（HTTPS を強制する前なら http）に左右される
+url: https://readglide.naruberio.com
+baseurl: ""
+
+# sitemap.xml を作る（Search Console と Bing Webmaster Tools に登録する。KAN-1085）
+plugins:
+  - jekyll-sitemap

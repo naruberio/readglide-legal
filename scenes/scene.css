@@ -1,0 +1,177 @@
+/*
+ * 用途別の説明ページ（KAN-1130 / teleprompter-app D-52）の共通スタイル。
+ * 6 枚が同じ部品を使うので外に出した（1 か所直せば全ページにそろって効く）。
+ *
+ * なぜこの見た目か:
+ * - 「場面の物語」として、ある人がその場面で使う流れを時刻の順に追う。原稿の紙を思わせる明るい地と明朝/セリフ体で組み、
+ *   物語の山場の 1 段だけに朱の帯を引く（アプリのアイコンの「読んでいる行に朱の帯」と同じ発想）。
+ * - このサイトの法務ページ（Jekyll の minimal テーマ）とは別の作りにする（ほかと分けた理由は README を参照）。
+ * - 外部の JS・フォント・画像は使わない。端末に入っている書体だけで組む。
+ */
+:root {
+  --paper: #f8f4ea;
+  --paper-deep: #efe8d8;
+  --ink: #26221c;
+  --ink-soft: #5e564a;
+  --rule: #d9cfbb;
+  --shu: #b23a22;      /* 朱。紙の地とのコントラスト比は約 5.4:1 で、本文のリンクにも使える */
+  --shu-band: #f4ddd3; /* 山場の段の帯 */
+  --slate: #3f4e5b;    /* アイコンの青灰。ボタン名の札に使う */
+  --slate-pale: #e2e6e8;
+  color-scheme: light;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  font-size: 1.0625rem;
+  line-height: 1.72;
+  overflow-wrap: break-word;
+}
+/* 日本語は明朝で組み、行間を広めに取る（ゴシックの SoundPull と字面を分ける） */
+html:lang(ja) body {
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, "Noto Serif JP", "Noto Serif CJK JP", serif;
+  line-height: 1.95;
+  letter-spacing: 0.02em;
+}
+a { color: var(--shu); text-decoration-thickness: 1px; text-underline-offset: 0.22em; }
+a:hover { text-decoration-thickness: 2px; }
+
+/* 上の帯: サイト名と言語の切り替え。紙の上端の綴じ代のように細く置く */
+.masthead { border-bottom: 1px solid var(--rule); background: var(--paper-deep); }
+.masthead-inner {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 0.6rem 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.25rem 1rem;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+.masthead a { color: var(--ink); text-decoration: none; }
+.masthead a:hover { text-decoration: underline; }
+.masthead .lang > * + * { margin-left: 0.7rem; }
+.masthead .lang [aria-current] { color: var(--shu); }
+
+.sheet { max-width: 40rem; margin: 0 auto; padding: 2.25rem 16px 3rem; }
+
+/* 見出しの上の小さな札: 「場面 1 / 3」 */
+.scene-no {
+  display: inline-block;
+  margin: 0 0 0.9rem;
+  padding-top: 0.3rem;
+  border-top: 2px solid var(--shu);
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--shu);
+}
+h1 { margin: 0 0 1.1rem; font-size: 1.85rem; line-height: 1.32; font-weight: 700; }
+html:lang(ja) h1 { font-size: 1.6rem; line-height: 1.5; letter-spacing: 0.03em; }
+/* 冒頭の 2〜3 文で答えを言い切る。検索や AI の要約は冒頭を拾うことが多いので、物語より先に置く */
+.lede { margin: 0 0 2rem; font-size: 1.12rem; }
+html:lang(ja) .lede { font-size: 1.04rem; }
+
+h2 { margin: 2.6rem 0 0.8rem; font-size: 1.28rem; line-height: 1.45; }
+html:lang(ja) h2 { font-size: 1.16rem; }
+h2::before { content: ""; display: block; width: 2.2rem; height: 1px; margin-bottom: 0.7rem; background: var(--ink); }
+
+/* 場面の設定。脚本の柱（どこで・いつ）のように、字間を空けた小さな行を先に置く */
+.setting { margin: 0 0 0.6rem; font-size: 0.82rem; letter-spacing: 0.08em; color: var(--ink-soft); }
+
+/* 流れ: 時刻の札と段落の組を縦に並べる。左の細い線が時間の流れ */
+ol.beats { list-style: none; margin: 1.2rem 0 0; padding: 0; border-left: 1px solid var(--rule); }
+ol.beats > li { position: relative; margin: 0 0 1.7rem; padding: 0 0 0 1.25rem; }
+ol.beats > li::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 0.6rem;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--paper);
+  border: 1px solid var(--ink-soft);
+}
+.when { display: block; margin-bottom: 0.15rem; font-size: 0.8rem; letter-spacing: 0.08em; color: var(--ink-soft); }
+.story { margin: 0 0 0.5rem; }
+/* 山場の段: 朱の帯。各ページで 1 段だけに付ける */
+ol.beats > li.reading::before { background: var(--shu); border-color: var(--shu); }
+ol.beats > li.reading .story { margin-left: -0.6rem; padding: 0.35rem 0.6rem; background: var(--shu-band); }
+/* アプリでの操作。物語の文と分け、紙に貼った付箋のように左に青灰の線を引いて組む */
+.do {
+  margin: 0.35rem 0 0;
+  padding: 0.55rem 0.8rem;
+  border-left: 3px solid var(--slate);
+  background: rgba(255, 255, 255, 0.6);
+  font-size: 0.97rem;
+}
+.do p { margin: 0 0 0.45rem; }
+.do p:last-child { margin-bottom: 0; }
+.do-label {
+  display: block;
+  margin-bottom: 0.1rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--slate);
+}
+/* 画面のボタン名・欄の名前。アプリの表示と一字一句そろえ、読み手が画面で探せるようにする */
+.ui {
+  padding: 0.05em 0.3em;
+  border-radius: 3px;
+  background: var(--slate-pale);
+  color: var(--slate);
+  font-family: system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif;
+  font-size: 0.86em;
+  letter-spacing: 0;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+/* 日本語は「」で囲むので、札の地は付けず、書体と色だけで示す（二重の囲みにしない） */
+html:lang(ja) .ui { padding: 0; background: none; font-size: 0.9em; }
+/* 原稿の書き方の見本。等幅で、紙に書いた台本の 1 行のように */
+.script-line {
+  display: block;
+  margin: 0.3rem 0;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, "Hiragino Sans", monospace;
+  font-size: 0.86rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+/* この場面で Readglide が受け持つこと: 罫線の帳面 */
+ul.notebook { list-style: none; margin: 1rem 0 0; padding: 0; border-top: 1px solid var(--ink); }
+ul.notebook li { padding: 0.55rem 0 0.55rem 1.4rem; border-bottom: 1px solid var(--rule); position: relative; }
+ul.notebook li::before { content: "\2713"; position: absolute; left: 0.1rem; top: 0.55rem; color: var(--shu); }
+
+/* App Store への入口。丸いボタンにせず、紙の下端に引いた二重線の上に置く */
+.store { margin: 2.8rem 0 0; padding: 1.1rem 0 0; border-top: 3px double var(--ink); }
+.store p { margin: 0 0 0.4rem; }
+.store a.go { font-size: 1.12rem; font-weight: 700; }
+.store a.go::after { content: " \2192"; }
+
+/* ほかの場面 */
+.more { margin: 2.4rem 0 0; }
+.more ul { list-style: none; margin: 0; padding: 0; }
+.more li { margin: 0 0 0.5rem; padding-left: 1.3rem; position: relative; }
+.more li::before { content: "\2014"; position: absolute; left: 0; color: var(--ink-soft); }
+
+.colophon {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1rem 16px 2.5rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+.colophon a { color: var(--ink-soft); }
+.colophon .sep { margin: 0 0.45rem; color: var(--rule); }

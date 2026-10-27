@@ -15,6 +15,16 @@ Readglide は、裏にサーバーを持たない iPhone・iPad 用のテレプ�
 | Terms of sale and use / 販売と利用の条件 | [Terms of Service](./terms) | [利用規約](./terms-ja) |
 | Help and contact / 困ったとき | [Support](./support) | [サポート](./support) |
 
+## Scenes / 使い方の場面
+
+How Readglide is used in three situations, followed step by step. / Readglide を使う 3 つの場面を、順を追って紹介しています。
+
+| | English | 日本語 |
+|---|---|---|
+| Reading a script on camera / カメラ目線で原稿を読んで撮る | [Read a script on camera](./scenes/read-script-on-camera) | [カメラ目線で原稿を読んで撮る](./scenes/read-script-on-camera-ja) |
+| A talk with a time limit / 持ち時間のある発表 | [Rehearse to a time limit](./scenes/presentation-time-limit) | [持ち時間どおりに練習する](./scenes/presentation-time-limit-ja) |
+| Interview answers / 面接の受け答え | [Practice interview answers](./scenes/interview-practice) | [面接の受け答えを練習する](./scenes/interview-practice-ja) |
+
 ## Get Readglide / 入手
 
 [Readglide on the App Store / App Store の Readglide](https://apps.apple.com/app/id6799660946)

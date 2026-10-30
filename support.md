@@ -59,3 +59,54 @@ iOS の「設定」アプリで Readglide を選び、音声認識をオンに�
 ---
 
 [← Home](./)
+
+{% comment %}
+FAQPage の構造化データ（KAN-1162）。上の「よくある質問」のうち、購入と設定にかかわる問いだけを載せる。
+答えは本文の答えの先頭から、購入と設定の手順にあたる文だけを同じ文のまま抜き出す（制約にあたる後半は載せない。KAN-1162）。
+本文を直したらここも直し、dateModified を変える。
+{% endcomment %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "dateModified": "2026-10-30",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "The review asks me to allow Speech Recognition in Settings.",
+      "inLanguage": "en",
+      "acceptedAnswer": {"@type": "Answer", "text": "Open the iOS Settings app, choose Readglide, and turn on Speech Recognition. Scrolling and recording keep working without it."}
+    },
+    {
+      "@type": "Question",
+      "name": "I reinstalled Readglide. Do I need to restore a purchase?",
+      "inLanguage": "en",
+      "acceptedAnswer": {"@type": "Answer", "text": "No. With no in-app purchases, there is nothing to restore: download Readglide again with the same Apple ID and every feature is there."}
+    },
+    {
+      "@type": "Question",
+      "name": "How do I get a refund?",
+      "inLanguage": "en",
+      "acceptedAnswer": {"@type": "Answer", "text": "Apple handles all payments. Ask through <a href=\"https://support.apple.com/HT204084\">Apple Support</a>."}
+    },
+    {
+      "@type": "Question",
+      "name": "テイクの採点で、設定から音声認識を許可するよう求められる。",
+      "inLanguage": "ja",
+      "acceptedAnswer": {"@type": "Answer", "text": "iOS の「設定」アプリで Readglide を選び、音声認識をオンにしてください。オフのままでも、原稿のスクロールと録画は使えます。"}
+    },
+    {
+      "@type": "Question",
+      "name": "入れ直したとき、購入の復元は必要？",
+      "inLanguage": "ja",
+      "acceptedAnswer": {"@type": "Answer", "text": "いりません。アプリの中で買うものが無いので、復元するものもありません。同じ Apple ID で App Store から入れ直せば、すべての機能が使えます。"}
+    },
+    {
+      "@type": "Question",
+      "name": "返金してほしい。",
+      "inLanguage": "ja",
+      "acceptedAnswer": {"@type": "Answer", "text": "支払いはすべて Apple が扱っています。<a href=\"https://support.apple.com/HT204084\">Apple のサポート</a>から申し込んでください。"}
+    }
+  ]
+}
+</script>

@@ -1,7 +1,7 @@
 ---
 layout: null
 permalink: /scenes/interview-practice
-last_modified_at: 2026-10-27
+last_modified_at: 2026-10-31
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +12,8 @@ last_modified_at: 2026-10-27
   <meta name="description" content="How to rehearse interview answers on iPhone or iPad: write Q: and A: lines, and Readglide reads each question aloud, scrolls your answer, then shows how much of it you said, what you skipped and how fast you spoke.">
   {% comment %} 用途別の説明ページ（KAN-1130 / teleprompter-app D-52）。ボタン名はアプリの en の表示（Localizable.xcstrings）と一字一句そろえる。
        無料の代替手段とアプリ自身の制約は書かない（soundpull-app D-58・D-59 に合わせる。README を参照）。
-       面接の練習でうたえるのは、質問の読み上げ・原稿を見ながら答える・原稿との一致の採点・同じ形で自作できる、の 4 つだけ（D-43 の追記・設計書 §19.18） {% endcomment %}
+       面接の練習でうたえるのは、質問の読み上げ・原稿を見ながら答える・原稿との一致の採点・同じ形で自作できる、の 4 つと、採点の欄の 1 つとしての口癖の数（D-62 ③）だけ（D-43 の追記・設計書 §19.18）。
+       v1.5（KAN-1182・D-62）: 入口を「What are you practicing?」→「Job interview」に直し、振り返りに口癖の欄（設計書 §19.23）を足した {% endcomment %}
   <link rel="canonical" href="https://readglide.naruberio.com/scenes/interview-practice">
   <link rel="alternate" hreflang="en" href="https://readglide.naruberio.com/scenes/interview-practice">
   <link rel="alternate" hreflang="ja" href="https://readglide.naruberio.com/scenes/interview-practice-ja">
@@ -24,7 +25,7 @@ last_modified_at: 2026-10-27
   <meta property="og:url" content="https://readglide.naruberio.com/scenes/interview-practice">
   <link rel="stylesheet" href="./scene.css">
   <script type="application/ld+json">
-  {"@context": "https://schema.org", "@type": "Article", "headline": "Practice interview answers out loud, with your notes in front of you", "inLanguage": "en", "url": "https://readglide.naruberio.com/scenes/interview-practice", "dateModified": "2026-10-27", "about": {"@type": "SoftwareApplication", "name": "Readglide", "operatingSystem": "iOS, iPadOS", "applicationCategory": "ProductivityApplication"}}
+  {"@context": "https://schema.org", "@type": "Article", "headline": "Practice interview answers out loud, with your notes in front of you", "inLanguage": "en", "url": "https://readglide.naruberio.com/scenes/interview-practice", "dateModified": "2026-10-31", "about": {"@type": "SoftwareApplication", "name": "Readglide", "operatingSystem": "iOS, iPadOS", "applicationCategory": "ProductivityApplication"}}
   </script>
 </head>
 <body>
@@ -51,7 +52,7 @@ last_modified_at: 2026-10-27
         <p class="story">Before writing anything, a quick try with a ready-made interview.</p>
         <div class="do">
           <span class="do-label">In Readglide</span>
-          <p>On the script list, below <span class="ui">Timer &amp; Bell</span>, tap <span class="ui">Interview practice</span>. A <span class="ui">Sample interview</span> opens: six questions and answers in the app's language, from "Please tell me about yourself" to "Do you have any questions for us?", with your role already set to A.</p>
+          <p>On the script list, below <span class="ui">Timer &amp; Bell</span>, tap <span class="ui">What are you practicing?</span>, then <span class="ui">Job interview</span>. A <span class="ui">Sample interview</span> opens: six questions and answers in the app's language, from "Please tell me about yourself" to "Do you have any questions for us?", with your role already set to A.</p>
         </div>
       </li>
       <li>
@@ -86,7 +87,7 @@ A: I want to use what I have learned from customers to help improve your product
         <p class="story">The answer about the problem they solved felt fine. Did it include the part about the warehouse team?</p>
         <div class="do">
           <span class="do-label">In Readglide</span>
-          <p>Stop the recording and tap <span class="ui">Review take</span>. With A chosen, <span class="ui">Take Review</span> notes <span class="ui">Scored only A's lines</span>, so only your answers count. <span class="ui">Read as written</span> shows how closely you kept to your words and how many lines you covered, <span class="ui">Skipped lines</span> lists what was dropped, and <span class="ui">Speaking rate</span> and <span class="ui">Long pauses</span> show the pace. The time spent listening to a question is not counted as a pause.</p>
+          <p>Stop the recording and tap <span class="ui">Review take</span>. With A chosen, <span class="ui">Take Review</span> notes <span class="ui">Scored only A's lines</span>, so only your answers count. <span class="ui">Read as written</span> shows how closely you kept to your words and how many lines you covered, <span class="ui">Skipped lines</span> lists what was dropped, and <span class="ui">Speaking rate</span> and <span class="ui">Long pauses</span> show the pace. The time spent listening to a question is not counted as a pause. <span class="ui">Fillers and off-script words</span> counts the fillers it heard, such as um and uh, and the words that were not in the script.</p>
         </div>
       </li>
       <li>
@@ -105,6 +106,7 @@ A: I want to use what I have learned from customers to help improve your product
       <li>Your own interview, written as Q: and A: lines, with private notes in brackets.</li>
       <li>A sample interview to try first, in the app's language.</li>
       <li>Only your answers scored: how closely you kept to them, which lines you skipped, your speaking rate and your long pauses.</li>
+      <li>Fillers such as um and uh, and words that were not in the script, counted for each take.</li>
       <li>A practice history for every saved script, so each run can be compared with the last.</li>
       <li>Practice with audio only, or on camera.</li>
     </ul>

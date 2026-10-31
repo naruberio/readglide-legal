@@ -1,7 +1,7 @@
 ---
 layout: null
 permalink: /scenes/presentation-time-limit-ja
-last_modified_at: 2026-10-27
+last_modified_at: 2026-10-31
 ---
 <!DOCTYPE html>
 <html lang="ja">
@@ -11,7 +11,8 @@ last_modified_at: 2026-10-27
   <title>プレゼン・発表を、持ち時間どおりに練習する | Readglide</title>
   <meta name="description" content="iPhone・iPad で、発表を持ち時間に収める練習のしかた。Readglide は原稿を流しながら残り時間と予定からの遅れ・先行を示し、速さを持ち時間に合わせ、見出しごとの予定と実際の時間を並べます。学会の 1 鈴・2 鈴・3 鈴も鳴らせます。">
   {% comment %} 用途別の説明ページ（KAN-1130 / teleprompter-app D-52）。ボタン名はアプリの ja の表示（Localizable.xcstrings）と一字一句そろえる。
-       無料の代替手段とアプリ自身の制約は書かない（soundpull-app D-58・D-59 に合わせる。README を参照） {% endcomment %}
+       無料の代替手段とアプリ自身の制約は書かない（soundpull-app D-58・D-59 に合わせる。README を参照）。
+       v1.5（KAN-1182・D-62）: 振り返りに口癖の欄（設計書 §19.23）を足した {% endcomment %}
   <link rel="canonical" href="https://readglide.naruberio.com/scenes/presentation-time-limit-ja">
   <link rel="alternate" hreflang="en" href="https://readglide.naruberio.com/scenes/presentation-time-limit">
   <link rel="alternate" hreflang="ja" href="https://readglide.naruberio.com/scenes/presentation-time-limit-ja">
@@ -23,7 +24,7 @@ last_modified_at: 2026-10-27
   <meta property="og:url" content="https://readglide.naruberio.com/scenes/presentation-time-limit-ja">
   <link rel="stylesheet" href="./scene.css">
   <script type="application/ld+json">
-  {"@context": "https://schema.org", "@type": "Article", "headline": "プレゼン・発表を、持ち時間どおりに練習する", "inLanguage": "ja", "url": "https://readglide.naruberio.com/scenes/presentation-time-limit-ja", "dateModified": "2026-10-27", "about": {"@type": "SoftwareApplication", "name": "Readglide", "operatingSystem": "iOS, iPadOS", "applicationCategory": "ProductivityApplication"}}
+  {"@context": "https://schema.org", "@type": "Article", "headline": "プレゼン・発表を、持ち時間どおりに練習する", "inLanguage": "ja", "url": "https://readglide.naruberio.com/scenes/presentation-time-limit-ja", "dateModified": "2026-10-31", "about": {"@type": "SoftwareApplication", "name": "Readglide", "operatingSystem": "iOS, iPadOS", "applicationCategory": "ProductivityApplication"}}
   </script>
 </head>
 <body>
@@ -88,7 +89,7 @@ last_modified_at: 2026-10-27
         <p class="story">月曜の問いに答えが出ます。長いのはどこか。</p>
         <div class="do">
           <span class="do-label">Readglide では</span>
-          <p>停止のボタン（「<span class="ui">録音を停止</span>」）を押し、採点のボタン（「<span class="ui">テイクを採点</span>」）を押します。「<span class="ui">テイクの採点</span>」の「<span class="ui">持ち時間</span>」の欄に、まず「<span class="ui">原稿全体</span>」、続いて # の見出しごとに「<span class="ui">予定 … · 実際 …</span>」と、その見出しの終わりまでの遅れ・先行が並びます。「<span class="ui">話す速さ</span>」と「<span class="ui">長い間</span>」から、時間がどこで延びたかも読めます。</p>
+          <p>停止のボタン（「<span class="ui">録音を停止</span>」）を押し、採点のボタン（「<span class="ui">テイクを採点</span>」）を押します。「<span class="ui">テイクの採点</span>」の「<span class="ui">持ち時間</span>」の欄に、まず「<span class="ui">原稿全体</span>」、続いて # の見出しごとに「<span class="ui">予定 … · 実際 …</span>」と、その見出しの終わりまでの遅れ・先行が並びます。「<span class="ui">話す速さ</span>」と「<span class="ui">長い間</span>」から、時間がどこで延びたかも読めます。「<span class="ui">口癖と原稿に無い言葉</span>」には、拾った「えー」などの口癖の回数が出ます。</p>
           <p>はみ出していたのは方法の見出しでした。2 文を削ると、次の通しは時間内に収まりました。</p>
         </div>
       </li>
@@ -108,7 +109,7 @@ last_modified_at: 2026-10-27
       <li>原稿ごとの持ち時間。プロンプターのタイマーのメニューか、「<span class="ui">テイクの採点</span>」で 30 秒刻みに決められます。</li>
       <li>話している間は、緑・黄・赤の色、残り時間、スクロールが予定より遅れているか先行しているか、今いるべき所の目印を示します。</li>
       <li>「<span class="ui">持ち時間に合わせる</span>」を押すと、残りをちょうど持ち時間が尽きるころに読み終える速さに変えます。</li>
-      <li>読み終えた後は、原稿全体と # の見出しごとに、予定と実際の時間を並べます。</li>
+      <li>読み終えた後は、原稿全体と # の見出しごとに、予定と実際の時間を並べ、「えー」などの口癖の回数も数えます。</li>
       <li>原稿を出さない発表には「<span class="ui">タイマーとベル</span>」。灯、大きな残り時間、1 鈴・2 鈴・3 鈴。</li>
       <li>音声だけの練習は、写真に保存しません。</li>
     </ul>

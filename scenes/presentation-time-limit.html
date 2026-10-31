@@ -1,7 +1,7 @@
 ---
 layout: null
 permalink: /scenes/presentation-time-limit
-last_modified_at: 2026-10-27
+last_modified_at: 2026-10-31
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +11,8 @@ last_modified_at: 2026-10-27
   <title>Rehearse a presentation so it fits its time limit | Readglide</title>
   <meta name="description" content="How to rehearse a talk to a fixed time on iPhone or iPad: Readglide shows the time left and whether you are ahead or behind as your script scrolls, fits the speed to the time, compares each section's planned and actual time, and rings warning bells.">
   {% comment %} 用途別の説明ページ（KAN-1130 / teleprompter-app D-52）。ボタン名はアプリの en の表示（Localizable.xcstrings）と一字一句そろえる。
-       無料の代替手段とアプリ自身の制約は書かない（soundpull-app D-58・D-59 に合わせる。README を参照） {% endcomment %}
+       無料の代替手段とアプリ自身の制約は書かない（soundpull-app D-58・D-59 に合わせる。README を参照）。
+       v1.5（KAN-1182・D-62）: 振り返りに口癖の欄（設計書 §19.23）を足した {% endcomment %}
   <link rel="canonical" href="https://readglide.naruberio.com/scenes/presentation-time-limit">
   <link rel="alternate" hreflang="en" href="https://readglide.naruberio.com/scenes/presentation-time-limit">
   <link rel="alternate" hreflang="ja" href="https://readglide.naruberio.com/scenes/presentation-time-limit-ja">
@@ -23,7 +24,7 @@ last_modified_at: 2026-10-27
   <meta property="og:url" content="https://readglide.naruberio.com/scenes/presentation-time-limit">
   <link rel="stylesheet" href="./scene.css">
   <script type="application/ld+json">
-  {"@context": "https://schema.org", "@type": "Article", "headline": "Rehearse a presentation so it fits its time limit", "inLanguage": "en", "url": "https://readglide.naruberio.com/scenes/presentation-time-limit", "dateModified": "2026-10-27", "about": {"@type": "SoftwareApplication", "name": "Readglide", "operatingSystem": "iOS, iPadOS", "applicationCategory": "ProductivityApplication"}}
+  {"@context": "https://schema.org", "@type": "Article", "headline": "Rehearse a presentation so it fits its time limit", "inLanguage": "en", "url": "https://readglide.naruberio.com/scenes/presentation-time-limit", "dateModified": "2026-10-31", "about": {"@type": "SoftwareApplication", "name": "Readglide", "operatingSystem": "iOS, iPadOS", "applicationCategory": "ProductivityApplication"}}
   </script>
 </head>
 <body>
@@ -88,7 +89,7 @@ last_modified_at: 2026-10-27
         <p class="story">Now the question from Monday has an answer: which part is too long?</p>
         <div class="do">
           <span class="do-label">In Readglide</span>
-          <p>Stop the recording (<span class="ui">Stop audio recording</span>) and tap <span class="ui">Review take</span>. In <span class="ui">Take Review</span>, the <span class="ui">Time budget</span> section starts with <span class="ui">Whole script</span> and then lists each # section as <span class="ui">Planned … · Actual …</span>, with how far ahead or behind the talk was by the end of it. <span class="ui">Speaking rate</span> and <span class="ui">Long pauses</span> show where the time went.</p>
+          <p>Stop the recording (<span class="ui">Stop audio recording</span>) and tap <span class="ui">Review take</span>. In <span class="ui">Take Review</span>, the <span class="ui">Time budget</span> section starts with <span class="ui">Whole script</span> and then lists each # section as <span class="ui">Planned … · Actual …</span>, with how far ahead or behind the talk was by the end of it. <span class="ui">Speaking rate</span> and <span class="ui">Long pauses</span> show where the time went, and <span class="ui">Fillers and off-script words</span> counts the ums and uhs it heard.</p>
           <p>Here, the method section is the one that runs over. Two sentences go, and the next run comes in on time.</p>
         </div>
       </li>
@@ -108,7 +109,7 @@ last_modified_at: 2026-10-27
       <li>A time budget for each script, from the prompter's timer menu or, in 30-second steps, from <span class="ui">Take Review</span>.</li>
       <li>While you speak: a green, yellow or red signal, the time left, and whether the scroll is ahead of or behind plan, with a marker for where you should be by now.</li>
       <li><span class="ui">Fit to time</span>: one tap sets the scroll speed so the rest of the script finishes close to your time.</li>
-      <li>After the run: planned and actual time for the whole script and for every # section.</li>
+      <li>After the run: planned and actual time for the whole script and for every # section, plus a count of fillers such as um and uh.</li>
       <li><span class="ui">Timer &amp; Bell</span> for talks with no script on screen: lights, a large countdown, and one, two or three bells.</li>
       <li>Rehearsals with audio only stay out of Photos.</li>
     </ul>

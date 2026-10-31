@@ -1,7 +1,7 @@
 ---
 layout: null
 permalink: /scenes/interview-practice-ja
-last_modified_at: 2026-10-27
+last_modified_at: 2026-10-31
 ---
 <!DOCTYPE html>
 <html lang="ja">
@@ -12,7 +12,8 @@ last_modified_at: 2026-10-27
   <meta name="description" content="iPhone・iPad で面接の受け答えを練習するやり方。Q: と A: の行で原稿を書くと、Readglide が質問を端末の声で読み上げ、答えを流し、答えをどれだけ原稿どおりに言えたか、飛ばした行、話す速さを示します。">
   {% comment %} 用途別の説明ページ（KAN-1130 / teleprompter-app D-52）。ボタン名はアプリの ja の表示（Localizable.xcstrings）と一字一句そろえる。
        無料の代替手段とアプリ自身の制約は書かない（soundpull-app D-58・D-59 に合わせる。README を参照）。
-       面接の練習でうたえるのは、質問の読み上げ・原稿を見ながら答える・原稿との一致の採点・同じ形で自作できる、の 4 つだけ（D-43 の追記・設計書 §19.18） {% endcomment %}
+       面接の練習でうたえるのは、質問の読み上げ・原稿を見ながら答える・原稿との一致の採点・同じ形で自作できる、の 4 つだけ（D-43 の追記・設計書 §19.18）。
+       v1.5（KAN-1182・D-62）: 入口を「何を練習しますか」→「面接」に直し、振り返りに口癖の欄（設計書 §19.23）を足した {% endcomment %}
   <link rel="canonical" href="https://readglide.naruberio.com/scenes/interview-practice-ja">
   <link rel="alternate" hreflang="en" href="https://readglide.naruberio.com/scenes/interview-practice">
   <link rel="alternate" hreflang="ja" href="https://readglide.naruberio.com/scenes/interview-practice-ja">
@@ -24,7 +25,7 @@ last_modified_at: 2026-10-27
   <meta property="og:url" content="https://readglide.naruberio.com/scenes/interview-practice-ja">
   <link rel="stylesheet" href="./scene.css">
   <script type="application/ld+json">
-  {"@context": "https://schema.org", "@type": "Article", "headline": "面接の受け答えを、手元のメモを見ながら声に出して練習する", "inLanguage": "ja", "url": "https://readglide.naruberio.com/scenes/interview-practice-ja", "dateModified": "2026-10-27", "about": {"@type": "SoftwareApplication", "name": "Readglide", "operatingSystem": "iOS, iPadOS", "applicationCategory": "ProductivityApplication"}}
+  {"@context": "https://schema.org", "@type": "Article", "headline": "面接の受け答えを、手元のメモを見ながら声に出して練習する", "inLanguage": "ja", "url": "https://readglide.naruberio.com/scenes/interview-practice-ja", "dateModified": "2026-10-31", "about": {"@type": "SoftwareApplication", "name": "Readglide", "operatingSystem": "iOS, iPadOS", "applicationCategory": "ProductivityApplication"}}
   </script>
 </head>
 <body>
@@ -51,7 +52,7 @@ last_modified_at: 2026-10-27
         <p class="story">何か書く前に、用意された面接でひととおり試してみます。</p>
         <div class="do">
           <span class="do-label">Readglide では</span>
-          <p>原稿一覧で、「<span class="ui">タイマーとベル</span>」の下にある「<span class="ui">面接の練習</span>」を押します。「<span class="ui">面接の見本</span>」が開きます。アプリの表示言語で、「自己紹介をお願いします。」から「最後に何か質問はありますか。」までの 6 組の質問と答えがあり、自分の役は A になっています。</p>
+          <p>原稿一覧で、「<span class="ui">タイマーとベル</span>」の下にある「<span class="ui">何を練習しますか</span>」を押し、「<span class="ui">面接</span>」を選びます。「<span class="ui">面接の見本</span>」が開きます。アプリの表示言語で、「自己紹介をお願いします。」から「最後に何か質問はありますか。」までの 6 組の質問と答えがあり、自分の役は A になっています。</p>
         </div>
       </li>
       <li>
@@ -86,7 +87,7 @@ A: お客様から学んだことを、御社の製品をよくすることに�
         <p class="story">解決した問題の答えは、うまく言えた気がする。倉庫の担当者と原因を探した話は入っていたかな。</p>
         <div class="do">
           <span class="do-label">Readglide では</span>
-          <p>録音か録画を止めて、「<span class="ui">テイクを採点</span>」を押します。A を選んでいると、「<span class="ui">テイクの採点</span>」に「<span class="ui">A のセリフだけを採点しました</span>」と出て、自分の答えだけが数えられます。「<span class="ui">原稿どおりに読めた割合</span>」に答えをどれだけ原稿どおりに言えたかと読んだ行の数が、「<span class="ui">飛ばした行</span>」に言い落とした所が、「<span class="ui">話す速さ</span>」と「<span class="ui">長い間</span>」に話しぶりが出ます。質問を聞いていた間は、長い間に数えません。</p>
+          <p>録音か録画を止めて、「<span class="ui">テイクを採点</span>」を押します。A を選んでいると、「<span class="ui">テイクの採点</span>」に「<span class="ui">A のセリフだけを採点しました</span>」と出て、自分の答えだけが数えられます。「<span class="ui">原稿どおりに読めた割合</span>」に答えをどれだけ原稿どおりに言えたかと読んだ行の数が、「<span class="ui">飛ばした行</span>」に言い落とした所が、「<span class="ui">話す速さ</span>」と「<span class="ui">長い間</span>」に話しぶりが出ます。質問を聞いていた間は、長い間に数えません。「<span class="ui">口癖と原稿に無い言葉</span>」には、拾った「えー」「あの」などの口癖と、原稿に無い言葉の数が出ます。</p>
         </div>
       </li>
       <li>
@@ -105,6 +106,7 @@ A: お客様から学んだことを、御社の製品をよくすることに�
       <li>自分の面接を Q: と A: の行で書けます。括弧の中は自分だけのメモになります。</li>
       <li>最初に試せる面接の見本が、アプリの表示言語で入っています。</li>
       <li>採点は自分の答えだけ。原稿どおりに言えた割合、飛ばした行、話す速さ、長い間を出します。</li>
+      <li>「えー」「あの」などの口癖と、原稿に無い言葉を、テイクごとに数えます。</li>
       <li>保存した原稿ごとに練習の記録が残り、前回と比べられます。</li>
       <li>声だけでも、カメラの前でも練習できます。</li>
     </ul>

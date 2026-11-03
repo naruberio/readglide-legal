@@ -3,3 +3,11 @@ title: Readglide
 description: A teleprompter that scores your take against the script, on iPhone and iPad / 原稿を流して練習し、原稿どおりに話せたかを採点するテレプロンプター
 theme: jekyll-theme-minimal
 lang: ja
+
+# github.io のまま検索に登録する（KAN-1085）。sitemap と canonical の URL をこの値で固定する
+url: https://naruberio.github.io
+baseurl: /readglide-legal
+
+# sitemap.xml を作る（Search Console の URL プレフィックスのプロパティへ送信する）
+plugins:
+  - jekyll-sitemap

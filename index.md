@@ -16,6 +16,7 @@ Readglide は、スピーチ・プレゼン・面接の受け答えを、原稿�
 | Read a script on camera / カメラ目線で原稿を読んで撮る | The script floats over the live camera preview and is not recorded into the video. You can save the take with captions made from your script text.<br>原稿はカメラ映像の上に重なり、動画には写りません。原稿の文字から作った字幕を入れて動画を残せます。 |
 | Rehearse a talk to a time limit / 持ち時間のある発表を練習する | Give a script a time budget and see a green, yellow or red signal, the time left, and whether you are ahead of or behind plan. Fit to time adjusts the scroll so you finish on time.<br>原稿ごとに持ち時間を決めると、緑・黄・赤の色、残り時間、予定より遅れているか先行しているかを表示します。「持ち時間に合わせる」で、ちょうど持ち時間が尽きるころに読み終える速さに変えます。 |
 | Practice interview answers / 面接の受け答えを練習する | Each Q: question is read aloud by the system voice while you answer from the A: lines. After the take, see how closely you kept to your answers, the lines you skipped and your speaking rate.<br>Q: の質問を端末の声で読み上げ、あなたは A: の行で答えます。録り終えたら、原稿どおりに話せた割合、飛ばした行、話す速さを確かめられます。 |
+| Keep a read-aloud log / 音読カードをつける | Record reading aloud and check it against the script. Readglide keeps the reading time and spots to practice by date, and turns each month into one image you can share.<br>音読を録って原稿と照らし合わせ、読んだ時間とうまく読めなかった所を日付つきで残します。月ごとに 1 枚の画像にまとめて渡せます。 |
 
 Readglide is bought once on the App Store, with nothing to buy inside it, no subscription and no ads. Speech is turned into text on the device, and the audio is not uploaded.<br>
 Readglide は App Store で一度だけ買うアプリです。アプリの中で売っているものも、サブスクリプションも、広告もありません。声は端末の中で文字にし、音声をネットへ送ることはありません。
@@ -31,6 +32,16 @@ What Readglide stores, the terms it is sold under, and where to get help. / 何�
 | What Readglide stores, and where / 何をどこに残すか | [Privacy Policy](./privacy) | [プライバシーポリシー](./privacy-ja) |
 | Terms of sale and use / 販売と利用の条件 | [Terms of Service](./terms) | [利用規約](./terms-ja) |
 | Help and contact / 困ったとき | [Support](./support) | [サポート](./support) |
+
+## Scenes / 使い方の場面
+
+How Readglide is used in three situations, followed step by step. / Readglide を使う 3 つの場面を、順を追って紹介しています。 / 按步骤介绍 Readglide 的三个使用场景。
+
+| | English | 日本語 | 简体中文 |
+|---|---|---|---|
+| Reading a script on camera / カメラ目線で原稿を読んで撮る | [Read a script on camera](./scenes/read-script-on-camera) | [カメラ目線で原稿を読んで撮る](./scenes/read-script-on-camera-ja) | [看着镜头读稿并录制](./scenes/read-script-on-camera-zh-Hans) |
+| A talk with a time limit / 持ち時間のある発表 | [Rehearse to a time limit](./scenes/presentation-time-limit) | [持ち時間どおりに練習する](./scenes/presentation-time-limit-ja) | [按规定时间练习演讲](./scenes/presentation-time-limit-zh-Hans) |
+| Interview answers / 面接の受け答え | [Practice interview answers](./scenes/interview-practice) | [面接の受け答えを練習する](./scenes/interview-practice-ja) | [练习面试回答](./scenes/interview-practice-zh-Hans) |
 
 ## Get Readglide / 入手
 
@@ -51,7 +62,7 @@ url は site.url から作る（独自ドメインに移っても書き換えず
   "@type": "SoftwareApplication",
   "name": "Readglide",
   "alternateName": ["Readglide: Speech & Read-Aloud", "Readglide: スピーチ練習・プロンプター・音読"],
-  "operatingSystem": "iOS",
+  "operatingSystem": "iOS, iPadOS",
   "applicationCategory": "BusinessApplication",
   "description": "A teleprompter for iPhone and iPad that scrolls your script, records the take and scores it against the text: how closely you kept to the script, skipped lines, speaking rate and pauses. Rehearse speeches and presentations to a time limit, read a script on camera, practice interview answers, or keep a read-aloud log. Speech is recognized on the device. One-time purchase, no in-app purchases, no subscription, no ads.",
   "featureList": [
@@ -72,6 +83,6 @@ url は site.url から作る（独自ドメインに移っても書き換えず
   "downloadUrl": "https://apps.apple.com/app/id6799660946",
   "installUrl": "https://apps.apple.com/app/id6799660946",
   "sameAs": "https://apps.apple.com/app/id6799660946",
-  "dateModified": "2026-10-30"
+  "dateModified": "2026-11-03"
 }
 </script>

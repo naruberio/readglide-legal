@@ -32,6 +32,16 @@ What Readglide stores, the terms it is sold under, and where to get help. / 何�
 | Terms of sale and use / 販売と利用の条件 | [Terms of Service](./terms) | [利用規約](./terms-ja) |
 | Help and contact / 困ったとき | [Support](./support) | [サポート](./support) |
 
+## Scenes / 使い方の場面
+
+How Readglide is used in three situations, followed step by step. / Readglide を使う 3 つの場面を、順を追って紹介しています。
+
+| | English | 日本語 |
+|---|---|---|
+| Reading a script on camera / カメラ目線で原稿を読んで撮る | [Read a script on camera](./scenes/read-script-on-camera) | [カメラ目線で原稿を読んで撮る](./scenes/read-script-on-camera-ja) |
+| A talk with a time limit / 持ち時間のある発表 | [Rehearse to a time limit](./scenes/presentation-time-limit) | [持ち時間どおりに練習する](./scenes/presentation-time-limit-ja) |
+| Interview answers / 面接の受け答え | [Practice interview answers](./scenes/interview-practice) | [面接の受け答えを練習する](./scenes/interview-practice-ja) |
+
 ## Get Readglide / 入手
 
 [Readglide on the App Store / App Store の Readglide](https://apps.apple.com/app/id6799660946)
@@ -51,7 +61,7 @@ url は site.url から作る（独自ドメインに移っても書き換えず
   "@type": "SoftwareApplication",
   "name": "Readglide",
   "alternateName": ["Readglide: Speech & Read-Aloud", "Readglide: スピーチ練習・プロンプター・音読"],
-  "operatingSystem": "iOS",
+  "operatingSystem": "iOS, iPadOS",
   "applicationCategory": "BusinessApplication",
   "description": "A teleprompter for iPhone and iPad that scrolls your script, records the take and scores it against the text: how closely you kept to the script, skipped lines, speaking rate and pauses. Rehearse speeches and presentations to a time limit, read a script on camera, practice interview answers, or keep a read-aloud log. Speech is recognized on the device. One-time purchase, no in-app purchases, no subscription, no ads.",
   "featureList": [
@@ -72,6 +82,6 @@ url は site.url から作る（独自ドメインに移っても書き換えず
   "downloadUrl": "https://apps.apple.com/app/id6799660946",
   "installUrl": "https://apps.apple.com/app/id6799660946",
   "sameAs": "https://apps.apple.com/app/id6799660946",
-  "dateModified": "2026-10-30"
+  "dateModified": "2026-11-03"
 }
 </script>

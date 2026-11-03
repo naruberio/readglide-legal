@@ -61,7 +61,7 @@ url は site.url から作る（独自ドメインに移っても書き換えず
   "@type": "SoftwareApplication",
   "name": "Readglide",
   "alternateName": ["Readglide: Speech & Read-Aloud", "Readglide: スピーチ練習・プロンプター・音読"],
-  "operatingSystem": "iOS",
+  "operatingSystem": "iOS, iPadOS",
   "applicationCategory": "BusinessApplication",
   "description": "A teleprompter for iPhone and iPad that scrolls your script, records the take and scores it against the text: how closely you kept to the script, skipped lines, speaking rate and pauses. Rehearse speeches and presentations to a time limit, read a script on camera, practice interview answers, or keep a read-aloud log. Speech is recognized on the device. One-time purchase, no in-app purchases, no subscription, no ads.",
   "featureList": [
@@ -82,6 +82,6 @@ url は site.url から作る（独自ドメインに移っても書き換えず
   "downloadUrl": "https://apps.apple.com/app/id6799660946",
   "installUrl": "https://apps.apple.com/app/id6799660946",
   "sameAs": "https://apps.apple.com/app/id6799660946",
-  "dateModified": "2026-10-30"
+  "dateModified": "2026-11-03"
 }
 </script>

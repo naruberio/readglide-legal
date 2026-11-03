@@ -10,6 +10,8 @@ last_modified_at: 2026-11-03
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>面试练习：看着笔记，把回答大声说出来 | Readglide</title>
   <meta name="description" content="在 iPhone、iPad 上练习面试回答。用 Q: 和 A: 行写好问答，Readglide 会朗读每个问题、滚动你的回答，然后显示你说出了多少、跳过了什么、语速如何。">
+  {% comment %} v1.5（KAN-1182・D-62）: 入口を「你想练习什么？」→「面试」に直し、振り返りに口癖の欄（設計書 §19.23）を足した。
+       ボタン名はアプリの zh-Hans の表示（Localizable.xcstrings）と一字一句そろえる。うたえる範囲は en のページのコメントと同じ {% endcomment %}
   <link rel="canonical" href="https://naruberio.github.io/readglide-legal/scenes/interview-practice-zh-Hans">
   <link rel="alternate" hreflang="en" href="https://naruberio.github.io/readglide-legal/scenes/interview-practice">
   <link rel="alternate" hreflang="ja" href="https://naruberio.github.io/readglide-legal/scenes/interview-practice-ja">
@@ -50,7 +52,7 @@ last_modified_at: 2026-11-03
         <p class="story">动笔之前，先用现成的面试试一遍。</p>
         <div class="do">
           <span class="do-label">在 Readglide 中</span>
-          <p>在文稿列表中，轻点<span class="ui">计时器与铃声</span>下方的<span class="ui">面试练习</span>。<span class="ui">面试示例</span>会打开：六组问答，使用 App 的语言，从“请介绍一下你自己。”到“你有什么问题想问我们吗？”，你的角色已经设为 A。</p>
+          <p>在文稿列表中，轻点<span class="ui">计时器与铃声</span>下方的<span class="ui">你想练习什么？</span>并选择<span class="ui">面试</span>。<span class="ui">面试示例</span>会打开：六组问答，使用 App 的语言，从“请介绍一下你自己。”到“你有什么问题想问我们吗？”，你的角色已经设为 A。</p>
         </div>
       </li>
       <li>
@@ -58,7 +60,7 @@ last_modified_at: 2026-11-03
         <p class="story">接下来才是正题：这家公司可能会问的问题，以及你想说的回答。</p>
         <div class="do">
           <span class="do-label">在 Readglide 中</span>
-          <p>轻点铅笔图标（<span class="ui">新建文稿</span>），按同样的 Q: 和 A: 格式，每个问题、每个回答各写一行：</p>
+          <p>返回文稿列表，轻点铅笔图标（<span class="ui">新建文稿</span>），按同样的 Q: 和 A: 格式，每个问题、每个回答各写一行：</p>
           <span class="script-line">Q: 你为什么对这个职位感兴趣？
 A: 我想把从客户那里学到的东西，用来帮助改进贵公司的产品。（提一下问卷调查）</span>
           <p>冒号前的英文角色名要用大写字母。括号里的内容是写给自己的备注，不会被朗读，也不计入评分。轻点<span class="ui">存储</span>。这会回到文稿列表；轻点这篇文稿将其打开，再轻点<span class="ui">立即阅读</span>。</p>
@@ -85,7 +87,7 @@ A: 我想把从客户那里学到的东西，用来帮助改进贵公司的产�
         <p class="story">那个解决问题的回答感觉还行。和仓库团队一起找原因的那部分说到了吗？</p>
         <div class="do">
           <span class="do-label">在 Readglide 中</span>
-          <p>停止录制，轻点<span class="ui">评估本条</span>。选择 A 后，<span class="ui">本条评估</span>会注明<span class="ui">仅对 A 的台词评分</span>，所以只计算你的回答。<span class="ui">按文稿读出的比例</span>显示你与自己写的回答有多接近，以及说到了多少行，<span class="ui">跳过的行</span>列出漏掉的内容，<span class="ui">语速</span>和<span class="ui">较长停顿</span>显示节奏。听问题的时间不算停顿。</p>
+          <p>停止录制，轻点<span class="ui">评估本条</span>。选择 A 后，<span class="ui">本条评估</span>会注明<span class="ui">仅对 A 的台词评分</span>，所以只计算你的回答。<span class="ui">按文稿读出的比例</span>显示你与自己写的回答有多接近，以及说到了多少行，<span class="ui">跳过的行</span>列出漏掉的内容，<span class="ui">语速</span>和<span class="ui">较长停顿</span>显示节奏。听问题的时间不算停顿。<span class="ui">填充词与文稿外的话</span>显示识别到的“嗯”“呃”等填充词和文稿外的话的数量。</p>
         </div>
       </li>
       <li>
@@ -105,6 +107,7 @@ A: 我想把从客户那里学到的东西，用来帮助改进贵公司的产�
       <li>有面试示例可以先试，使用 App 的语言。</li>
       <li>只为你的回答评分：与回答的接近程度、跳过的行、语速和较长停顿。</li>
       <li>每篇已存储文稿都有练习记录，每次都能与上一次比较。</li>
+      <li>每一条都会显示语音识别捕捉到的“嗯”“呃”等填充词和文稿外的话的数量。</li>
       <li>可以只用音频练习，也可以对着相机练习。</li>
     </ul>
 

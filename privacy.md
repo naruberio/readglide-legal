@@ -6,7 +6,7 @@ permalink: /privacy
 
 # Privacy Policy
 
-**Last updated: November 3, 2026**
+**Last updated: November 4, 2026**
 
 Readglide is a teleprompter for iPhone and iPad made by Kohei Omori, a sole proprietor based in Japan (called "the developer" below). This page walks through the app in the order you use it (writing a script, reading and recording, reviewing a take, exporting) and says at each stage what Readglide keeps, where, and when it goes away. None of it reaches the developer: Readglide has no server, no account and no network code, and it collects no personal information.
 

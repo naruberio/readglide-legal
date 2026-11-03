@@ -28,6 +28,12 @@ html:lang(ja) body {
   line-height: 1.95;
   letter-spacing: 0.02em;
 }
+/* 簡体字は簡体字用の書体を先に置く。明朝の指定を流用すると、日本語用の字形で描かれる字が混じる */
+html:lang(zh-Hans) body {
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  line-height: 1.85;
+  letter-spacing: 0.02em;
+}
 a { color: var(--shu); text-decoration-thickness: 1px; text-underline-offset: 0.22em; }
 a:hover { text-decoration-thickness: 2px; }
 
@@ -48,6 +54,7 @@ a:hover { text-decoration-thickness: 2px; }
 .masthead a:hover { text-decoration: underline; }
 .masthead .lang > * + * { margin-left: 0.7rem; }
 .masthead .lang [aria-current] { color: var(--shu); }
+.masthead .lang a:lang(zh-Hans) { font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; }
 
 .sheet { max-width: 40rem; margin: 0 auto; padding: 2.25rem 16px 3rem; }
 
@@ -63,13 +70,13 @@ a:hover { text-decoration-thickness: 2px; }
   color: var(--shu);
 }
 h1 { margin: 0 0 1.1rem; font-size: 1.85rem; line-height: 1.32; font-weight: 700; }
-html:lang(ja) h1 { font-size: 1.6rem; line-height: 1.5; letter-spacing: 0.03em; }
+html:lang(ja) h1, html:lang(zh-Hans) h1 { font-size: 1.6rem; line-height: 1.5; letter-spacing: 0.03em; }
 /* 冒頭の 2〜3 文で答えを言い切る。検索や AI の要約は冒頭を拾うことが多いので、物語より先に置く */
 .lede { margin: 0 0 2rem; font-size: 1.12rem; }
-html:lang(ja) .lede { font-size: 1.04rem; }
+html:lang(ja) .lede, html:lang(zh-Hans) .lede { font-size: 1.04rem; }
 
 h2 { margin: 2.6rem 0 0.8rem; font-size: 1.28rem; line-height: 1.45; }
-html:lang(ja) h2 { font-size: 1.16rem; }
+html:lang(ja) h2, html:lang(zh-Hans) h2 { font-size: 1.16rem; }
 h2::before { content: ""; display: block; width: 2.2rem; height: 1px; margin-bottom: 0.7rem; background: var(--ink); }
 
 /* 場面の設定。脚本の柱（どこで・いつ）のように、字間を空けた小さな行を先に置く */
@@ -126,6 +133,8 @@ ol.beats > li.reading .story { margin-left: -0.6rem; padding: 0.35rem 0.6rem; ba
 }
 /* 日本語は「」で囲むので、札の地は付けず、書体と色だけで示す（二重の囲みにしない） */
 html:lang(ja) .ui { padding: 0; background: none; font-size: 0.9em; }
+/* 簡体字では札の地を残す（「」で囲まないため）。書体は既定の日本語用を避ける */
+html:lang(zh-Hans) .ui { font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; }
 /* 原稿の書き方の見本。等幅で、紙に書いた台本の 1 行のように */
 .script-line {
   display: block;
@@ -138,6 +147,8 @@ html:lang(ja) .ui { padding: 0; background: none; font-size: 0.9em; }
   line-height: 1.6;
   white-space: pre-wrap;
 }
+
+html:lang(zh-Hans) .script-line { font-family: ui-monospace, "SF Mono", Menlo, Consolas, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", monospace; }
 
 /* この場面で Readglide が受け持つこと: 罫線の帳面 */
 ul.notebook { list-style: none; margin: 1rem 0 0; padding: 0; border-top: 1px solid var(--ink); }

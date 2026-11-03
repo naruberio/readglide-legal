@@ -35,13 +35,13 @@ What Readglide stores, the terms it is sold under, and where to get help. / 何�
 
 ## Scenes / 使い方の場面
 
-How Readglide is used in three situations, followed step by step. / Readglide を使う 3 つの場面を、順を追って紹介しています。
+How Readglide is used in three situations, followed step by step. / Readglide を使う 3 つの場面を、順を追って紹介しています。 / 按步骤介绍 Readglide 的三个使用场景。
 
-| | English | 日本語 |
-|---|---|---|
-| Reading a script on camera / カメラ目線で原稿を読んで撮る | [Read a script on camera](./scenes/read-script-on-camera) | [カメラ目線で原稿を読んで撮る](./scenes/read-script-on-camera-ja) |
-| A talk with a time limit / 持ち時間のある発表 | [Rehearse to a time limit](./scenes/presentation-time-limit) | [持ち時間どおりに練習する](./scenes/presentation-time-limit-ja) |
-| Interview answers / 面接の受け答え | [Practice interview answers](./scenes/interview-practice) | [面接の受け答えを練習する](./scenes/interview-practice-ja) |
+| | English | 日本語 | 简体中文 |
+|---|---|---|---|
+| Reading a script on camera / カメラ目線で原稿を読んで撮る | [Read a script on camera](./scenes/read-script-on-camera) | [カメラ目線で原稿を読んで撮る](./scenes/read-script-on-camera-ja) | [看着镜头读稿并录制](./scenes/read-script-on-camera-zh-Hans) |
+| A talk with a time limit / 持ち時間のある発表 | [Rehearse to a time limit](./scenes/presentation-time-limit) | [持ち時間どおりに練習する](./scenes/presentation-time-limit-ja) | [按规定时间练习演讲](./scenes/presentation-time-limit-zh-Hans) |
+| Interview answers / 面接の受け答え | [Practice interview answers](./scenes/interview-practice) | [面接の受け答えを練習する](./scenes/interview-practice-ja) | [练习面试回答](./scenes/interview-practice-zh-Hans) |
 
 ## Get Readglide / 入手
 

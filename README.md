@@ -30,6 +30,21 @@ App Store 提出版と一致させる。改訂時はメインリポジトリ `te
 
 プライバシーポリシー・利用規約の 4 ページ（`privacy*.md` / `terms*.md`）は、ここで直接直さない。`teleprompter-app` の `docs/legal/` を直してから、同リポジトリの `scripts/build_legal_pages.py` で作る（手順は `teleprompter-app` の `docs/legal/README.md`）。`support.md` と `index.md` はこのリポジトリで直接直す。
 
+## 使い方の場面（`scenes/`。KAN-1130）
+
+検索や AI の回答から拾われる入口として、用途別の説明ページを 3 場面 × en / ja の 6 枚置いている。決まりと理由は `teleprompter-app` の `docs/decisions.md` D-52 が正本。`scenes/` の HTML はこのリポジトリで直接直す。
+
+| 場面 | en | ja | App Store へのリンクの `ct` |
+|------|----|----|------|
+| カメラ目線で原稿を読んで撮る | `scenes/read-script-on-camera.html` | `scenes/read-script-on-camera-ja.html` | `rgweb-camera-en` / `rgweb-camera-ja` |
+| 持ち時間のある発表 | `scenes/presentation-time-limit.html` | `scenes/presentation-time-limit-ja.html` | `rgweb-time-en` / `rgweb-time-ja` |
+| 面接の受け答え | `scenes/interview-practice.html` | `scenes/interview-practice-ja.html` | `rgweb-interview-en` / `rgweb-interview-ja` |
+
+- 書いてよいのは**公開中の版に入っている機能だけ**。手順のボタン名・欄の名前はアプリの表示（`Localizable.xcstrings` の en / ja）とそろえる
+- canonical・hreflang・`og:url`・JSON-LD の URL は今の github.io の URL で書く。独自ドメインへ移すときは一緒に直す
+- 各ページは front matter に `layout: null` を書いてテーマを外し、`permalink` で拡張子なしの URL にしている。ページを変えたら `last_modified_at` と JSON-LD の `dateModified` も直す
+- App Store へのリンクは `https://apps.apple.com/app/apple-store/id6799660946?ct=<上の値>&mt=8`。`pt` はまだ付けていないので、Analytics の Campaign には計上されない
+
 ## サポート連絡先
 
 konpei.work@gmail.com

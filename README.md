@@ -12,6 +12,11 @@ GitHub Pages 有効化後、以下の URL で公開されます:
 - 利用規約: https://naruberio.github.io/readglide-legal/terms
 - サポート: https://naruberio.github.io/readglide-legal/support
 
+検索への登録（KAN-1085）:
+
+- `sitemap.xml` は jekyll-sitemap が作る。Search Console の URL プレフィックス `https://naruberio.github.io/readglide-legal/` へ送信する
+- `7833579911eb3524d6de4ae7e0c9fd6e.txt` は IndexNow の鍵（公開して使うもの）。ページを変えて公開したら、`keyLocation` をこのファイルにして通知する
+
 ## 言語
 
 - 日本語（マスター）: `privacy-ja.md` / `terms-ja.md`

@@ -1,7 +1,7 @@
 ---
 layout: null
 permalink: /scenes/presentation-time-limit-zh-Hans
-last_modified_at: 2026-11-03
+last_modified_at: 2026-11-04
 ---
 <!DOCTYPE html>
 <html lang="zh-Hans">
@@ -10,6 +10,8 @@ last_modified_at: 2026-11-03
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>演讲练习：把发言控制在规定时间内 | Readglide</title>
   <meta name="description" content="在 iPhone、iPad 上按规定时间练习演讲和汇报。Readglide 在文稿滚动时显示剩余时间和领先、落后的情况，可按时间调整滚动速度，对比每个章节的计划与实际用时，还能响预备铃。">
+  {% comment %} v1.5（KAN-1182・D-62）: 振り返りに口癖の欄（設計書 §19.23）を足した。
+       ボタン名はアプリの zh-Hans の表示（Localizable.xcstrings）と一字一句そろえる {% endcomment %}
   <link rel="canonical" href="https://naruberio.github.io/readglide-legal/scenes/presentation-time-limit-zh-Hans">
   <link rel="alternate" hreflang="en" href="https://naruberio.github.io/readglide-legal/scenes/presentation-time-limit">
   <link rel="alternate" hreflang="ja" href="https://naruberio.github.io/readglide-legal/scenes/presentation-time-limit-ja">
@@ -23,7 +25,7 @@ last_modified_at: 2026-11-03
   <meta property="og:url" content="https://naruberio.github.io/readglide-legal/scenes/presentation-time-limit-zh-Hans">
   <link rel="stylesheet" href="./scene.css">
   <script type="application/ld+json">
-  {"@context": "https://schema.org", "@type": "Article", "headline": "演讲练习：把发言控制在规定时间内", "inLanguage": "zh-Hans", "url": "https://naruberio.github.io/readglide-legal/scenes/presentation-time-limit-zh-Hans", "dateModified": "2026-11-03", "about": {"@type": "SoftwareApplication", "name": "Readglide", "operatingSystem": "iOS, iPadOS", "applicationCategory": "BusinessApplication"}}
+  {"@context": "https://schema.org", "@type": "Article", "headline": "演讲练习：把发言控制在规定时间内", "inLanguage": "zh-Hans", "url": "https://naruberio.github.io/readglide-legal/scenes/presentation-time-limit-zh-Hans", "dateModified": "2026-11-04", "about": {"@type": "SoftwareApplication", "name": "Readglide", "operatingSystem": "iOS, iPadOS", "applicationCategory": "BusinessApplication"}}
   </script>
 </head>
 <body>
@@ -88,7 +90,7 @@ last_modified_at: 2026-11-03
         <p class="story">周一的问题现在有答案了：到底哪一部分太长？</p>
         <div class="do">
           <span class="do-label">在 Readglide 中</span>
-          <p>停止录音（<span class="ui">停止录音</span>），轻点<span class="ui">评估本条</span>。在<span class="ui">本条评估</span>的<span class="ui">时间分配</span>部分，先是<span class="ui">整篇文稿</span>，然后每个 # 章节都列出<span class="ui">计划 … · 实际 …</span>，以及到该章节结束时领先或落后多少。<span class="ui">语速</span>和<span class="ui">较长停顿</span>能看出时间花在了哪里。</p>
+          <p>停止录音（<span class="ui">停止录音</span>），轻点<span class="ui">评估本条</span>。在<span class="ui">本条评估</span>的<span class="ui">时间分配</span>部分，先是<span class="ui">整篇文稿</span>，然后每个 # 章节都列出<span class="ui">计划 … · 实际 …</span>，以及到该章节结束时领先或落后多少。<span class="ui">语速</span>和<span class="ui">较长停顿</span>能看出时间花在了哪里，<span class="ui">填充词与文稿外的话</span>显示识别到的“嗯”“呃”等填充词的次数。</p>
           <p>这一次超时的是方法部分。删掉两句话，下一次通读就按时讲完了。</p>
         </div>
       </li>
@@ -108,7 +110,7 @@ last_modified_at: 2026-11-03
       <li>每篇文稿都有自己的时长，可在提词器的计时器菜单中设定，也可在<span class="ui">本条评估</span>中以 30 秒为单位设定。</li>
       <li>说话时：绿、黄、红信号，剩余时间，滚动比计划领先还是落后，并标出此刻应到的位置。</li>
       <li><span class="ui">按时间调整速度</span>：轻点一下，滚动速度就调整到让余下的文稿接近时间读完。</li>
-      <li>练习之后：整篇文稿和每个 # 章节的计划与实际用时。</li>
+      <li>练习之后：整篇文稿和每个 # 章节的计划与实际用时，以及语音识别捕捉到的“嗯”“呃”等填充词的次数。</li>
       <li><span class="ui">计时器与铃声</span>用于屏幕上不显示文稿的报告：灯光、大号倒计时，以及响一次、两次或三次的铃声。</li>
       <li>仅音频的练习不会存入“照片”。</li>
     </ul>
